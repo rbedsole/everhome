@@ -1,0 +1,9 @@
+title: Everhome
+description: A living journal and companion site chronicling the adventures, builds, discoveries, and evolution of my Minecraft forever world, Everhome.
+theme: minima
+header_pages:
+  - journal/index.md
+  - world/progression.md
+  - world/locations.md
+  - world/projects.md
+  - technical/index.md
