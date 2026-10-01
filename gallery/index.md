@@ -3,37 +3,25 @@ layout: default
 title: Gallery
 permalink: /gallery/
 ---
+<div class="section-hero">
+  <div class="ever-kicker">Visual Archive</div>
+  <h1>Gallery</h1>
+  <p>Landscapes, builds, expeditions, discoveries and the moments better remembered as images.</p>
+</div>
 
-# Gallery
+<div class="gallery-grid">
+  <article class="collection-card empty-collection">
+    <div class="collection-placeholder"><span>◇</span></div>
+    <div class="collection-body"><span class="ever-label">Collection</span><h2>The Beginning</h2><p>Reserved for the first visual records of Everhome.</p><small>Awaiting curated screenshots</small></div>
+  </article>
+  <article class="collection-card nether-accent">
+    <div class="collection-placeholder nether-placeholder"><span>◆</span></div>
+    <div class="collection-body"><span class="ever-label">Current Chapter</span><h2>Into the Nether</h2><p>First portal, cobbled deepslate bunker, Crimson Forest cavern and the lava sea below.</p><small>Ready for its first images</small></div>
+  </article>
+</div>
 
-Everhome's visual history.
+## A Curated History
 
-The Gallery preserves the moments that are better remembered as images: landscapes, builds, expeditions, discoveries, milestones, strange encounters, before-and-after changes, and the places that gradually become familiar.
+<div class="ever-callout"><p>A screenshot can appear in several contexts without creating several histories. The <strong>Gallery</strong> is the visual archive, the <strong>Journal</strong> can illustrate the story, the <strong>Atlas</strong> can show a place, and World Operations projects can eventually document construction.</p></div>
 
-## Collections
-
-### The Beginning
-
-No curated screenshots have been added yet.
-
-As images are selected, they can be grouped into collections by chapter, location, project, expedition, or event rather than dumped into one endless image feed.
-
-### Into the Nether
-
-The current chapter is ready for its first visual collection. Good candidates include the first portal, the cobbled deepslate portal bunker, the surrounding Crimson Forest cavern, and the lava sea beneath it.
-
----
-
-## How Images Fit Into Everhome
-
-A screenshot can appear in more than one context without creating separate histories.
-
-The **Gallery** is the visual archive. The **World Journal** can use selected images to illustrate an entry. **Locations** can show what a place looks like, while World Operations projects may eventually use images to document construction and completion.
-
-The original image remains part of Everhome's visual record.
-
-## Future Gallery
-
-As the archive grows, collections can gain captions, dates, related locations, related journal entries, and links to projects or milestones.
-
-If the future Everhome web app gains live World Operations integration, the Gallery should remain the curated historical side rather than becoming a raw screenshot browser.
+<div class="ever-note">As the archive grows, collections can gain captions, dates, related locations, journal entries and project links. The Gallery remains curated rather than becoming a raw screenshot browser.</div>
