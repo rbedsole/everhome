@@ -1,0 +1,179 @@
+---
+---
+
+@import "minima";
+
+:root {
+  --ever-bg: #101713;
+  --ever-surface: #18231c;
+  --ever-surface-2: #213026;
+  --ever-border: #344b3a;
+  --ever-text: #e8eadf;
+  --ever-muted: #aeb9aa;
+  --ever-moss: #8fb36b;
+  --ever-gold: #d7b86a;
+  --ever-nether: #c66a55;
+}
+
+html { background: var(--ever-bg); }
+
+body {
+  background:
+    radial-gradient(circle at 15% 0%, rgba(89,122,73,.18), transparent 34rem),
+    linear-gradient(180deg, #121a15 0%, var(--ever-bg) 38rem);
+  color: var(--ever-text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.site-header {
+  border-top: 4px solid var(--ever-moss);
+  border-bottom: 1px solid var(--ever-border);
+  background: rgba(16,23,19,.94);
+}
+
+.site-title, .site-title:visited {
+  color: var(--ever-text);
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+.site-nav .page-link { color: var(--ever-muted); }
+.site-nav .page-link:hover { color: var(--ever-gold); text-decoration: none; }
+
+.wrapper { max-width: 1080px; }
+
+.page-content { padding-top: 44px; }
+
+h1, h2, h3 { color: #f3f0df; }
+h1 { font-weight: 850; letter-spacing: -.025em; }
+h2 {
+  margin-top: 2.2rem;
+  padding-bottom: .35rem;
+  border-bottom: 1px solid var(--ever-border);
+}
+h3 { color: var(--ever-gold); }
+
+a, a:visited { color: var(--ever-moss); }
+a:hover { color: var(--ever-gold); }
+
+blockquote {
+  color: var(--ever-muted);
+  border-left: 4px solid var(--ever-moss);
+  background: rgba(143,179,107,.07);
+  padding: .8rem 1rem;
+}
+
+code {
+  background: var(--ever-surface-2);
+  color: var(--ever-text);
+}
+
+.site-footer {
+  border-top: 1px solid var(--ever-border);
+  color: var(--ever-muted);
+}
+
+.ever-hero {
+  padding: 3rem 0 2.3rem;
+  border-bottom: 1px solid var(--ever-border);
+  margin-bottom: 2rem;
+}
+.ever-kicker {
+  color: var(--ever-moss);
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: .78rem;
+  font-weight: 800;
+}
+.ever-hero h1 {
+  font-size: clamp(3rem, 9vw, 5.8rem);
+  line-height: .95;
+  margin: .3rem 0 1rem;
+}
+.ever-lede {
+  max-width: 700px;
+  color: var(--ever-muted);
+  font-size: 1.2rem;
+  line-height: 1.65;
+}
+.ever-chapter {
+  margin-top: 1.6rem;
+  display: inline-block;
+  padding: .55rem .8rem;
+  border: 1px solid rgba(198,106,85,.55);
+  border-radius: 999px;
+  color: #edb19f;
+  background: rgba(198,106,85,.09);
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.ever-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 1rem;
+  margin: 1.2rem 0 2.4rem;
+}
+.ever-card {
+  display: block;
+  min-height: 125px;
+  padding: 1.25rem;
+  border: 1px solid var(--ever-border);
+  border-radius: 12px;
+  background: linear-gradient(145deg, rgba(33,48,38,.95), rgba(24,35,28,.95));
+  color: var(--ever-text) !important;
+  text-decoration: none !important;
+  transition: transform .15s ease, border-color .15s ease;
+}
+.ever-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--ever-moss);
+}
+.ever-card strong {
+  display: block;
+  color: #f3f0df;
+  font-size: 1.08rem;
+  margin-bottom: .35rem;
+}
+.ever-card span {
+  color: var(--ever-muted);
+  font-size: .92rem;
+  line-height: 1.45;
+}
+
+.ever-status {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: .8rem;
+  margin: 1rem 0 2rem;
+}
+.ever-stat {
+  padding: 1rem;
+  border-left: 3px solid var(--ever-moss);
+  background: var(--ever-surface);
+}
+.ever-stat small {
+  display: block;
+  color: var(--ever-muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.ever-stat strong {
+  display: block;
+  margin-top: .3rem;
+  color: var(--ever-text);
+}
+
+.ever-callout {
+  padding: 1.2rem 1.35rem;
+  border: 1px solid var(--ever-border);
+  border-radius: 10px;
+  background: var(--ever-surface);
+}
+
+@media (max-width: 700px) {
+  .ever-grid, .ever-status { grid-template-columns: 1fr; }
+  .ever-hero { padding-top: 1.5rem; }
+  .site-nav { background: var(--ever-surface); border-color: var(--ever-border); }
+  .site-nav .menu-icon > svg { fill: var(--ever-text); }
+}
