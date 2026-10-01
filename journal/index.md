@@ -3,32 +3,29 @@ layout: default
 title: Journal
 permalink: /journal/
 ---
+<div class="section-hero">
+  <div class="ever-kicker">Chronicle</div>
+  <h1>World Journal</h1>
+  <p>Everhome's permanent chronological record: expeditions, discoveries, construction, setbacks, milestones, and the ordinary days that turn a save into a forever world.</p>
+</div>
 
-# World Journal
-
-Every world leaves a trail.
-
-This is Everhome's chronological record: expeditions, discoveries, construction, setbacks, milestones, and the ordinary days that slowly turn a Minecraft save into a forever world.
-
-## Current Chapter
-
-### Into the Nether
-
-Everhome has crossed its first major threshold into the Nether. The portal is secure, but its cavern spawn has left the expedition without a natural route into the surrounding terrain.
-
-[Read the latest entry →](2026-09-30.html)
-
----
+<div class="feature-card nether-accent">
+  <span class="ever-label">Current Chapter</span>
+  <h2>Into the Nether</h2>
+  <p>Everhome has crossed its first major threshold into the Nether. The portal is secure, but its cavern spawn has left the expedition without a natural route into the surrounding terrain.</p>
+  <a class="ever-action" href="{{ '/journal/2026-09-30.html' | relative_url }}">Read the latest entry →</a>
+</div>
 
 ## 2026
 
-### September
+<div class="timeline">
+  <article class="timeline-entry">
+    <div class="timeline-date">SEP 30</div>
+    <div>
+      <h3><a href="{{ '/journal/2026-09-30.html' | relative_url }}">Diamonds, Enchanting, and the Nether</a></h3>
+      <p>A long progression day transforms Everhome's equipment, completes the level-30 enchanting setup, and ends with the world's first steps into the Nether.</p>
+    </div>
+  </article>
+</div>
 
-**[September 30 · Diamonds, Enchanting, and the Nether](2026-09-30.html)**  
-A long progression day transforms Everhome's equipment, completes the level-30 enchanting setup, and ends with the world's first steps into the Nether.
-
----
-
-## About the Journal
-
-Journal entries are permanent records of Everhome as it existed at that moment. Current-state pages elsewhere on the site can change as the world grows, but these entries preserve the journey that got it there.
+<div class="ever-note"><strong>Permanent history.</strong> Current-state pages can change as Everhome grows. Journal entries preserve the world as it existed when they were written.</div>
