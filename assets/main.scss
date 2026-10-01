@@ -1,7 +1,8 @@
 ---
 ---
 
-@import "minima";
+@import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
+@import "minima/initialize";
 
 :root {
   --ever-bg: #101713;
