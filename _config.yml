@@ -3,7 +3,9 @@ description: A living journal and companion site chronicling the adventures, bui
 theme: minima
 header_pages:
   - journal/index.md
-  - world/progression.md
   - world/locations.md
   - world/projects.md
+  - world/progression.md
+  - world/resources.md
+  - gallery/index.md
   - technical/index.md
