@@ -3,83 +3,35 @@ layout: default
 title: Progression
 permalink: /progression/
 ---
+<div class="section-hero">
+  <div class="ever-kicker">World Journey</div>
+  <h1>Progression</h1>
+  <p>Meaningful changes in Everhome and the capabilities gained along the way, without turning the world into a checklist.</p>
+</div>
 
-# Progression
-
-A record of how Everhome has grown.
-
-Progression tracks meaningful changes in the world and the player's capabilities. It is not a task list and it does not decide what should happen next. Projects belong to World Operations; progression records the milestones reached while simply living in the world.
-
-## Current Chapter
-
-### Into the Nether
-
-Everhome has established its first Nether connection and secured the Nether-side portal.
-
-The portal opens into an isolated Crimson Forest cavern above a large lava sea. The immediate progression frontier is reaching explorable Nether terrain and beginning proper Nether exploration.
-
----
+<div class="feature-card nether-accent">
+  <span class="ever-label">Current Chapter</span>
+  <h2>Into the Nether</h2>
+  <p>The first Nether connection is established and secured. The immediate frontier is reaching explorable terrain beyond the isolated portal cavern.</p>
+</div>
 
 ## Major Milestones
 
-### Nether Access Established
+<div class="milestone-list">
+  <div class="milestone"><span class="milestone-mark">✓</span><div><strong>Nether Access Established</strong><p>First portal operational, protected and waypointed.</p></div></div>
+  <div class="milestone"><span class="milestone-mark">✓</span><div><strong>First Enchanted Diamond Set</strong><p>Diamond combat gear and primary tools completed and enchanted.</p><div class="gear-tags"><span>Pick · Efficiency IV / Unbreaking III</span><span>Axe · Efficiency IV</span><span>Sword · Sharpness IV / Knockback II</span><span>Helmet · Protection III / Aqua Affinity / Unbreaking III</span><span>Chest · Protection IV / Thorns II / Unbreaking III</span><span>Legs · Protection IV / Unbreaking III</span><span>Boots · Protection IV / Unbreaking III</span></div></div></div>
+  <div class="milestone"><span class="milestone-mark">✓</span><div><strong>Level-30 Enchanting</strong><p>Full 15-bookshelf enchanting setup established at the starter base.</p></div></div>
+  <div class="milestone"><span class="milestone-mark">✓</span><div><strong>Diamond Age</strong><p>Enough diamonds gathered to establish the first full armor and primary equipment set.</p></div></div>
+  <div class="milestone"><span class="milestone-mark">✓</span><div><strong>Deep Mining Established</strong><p>Dedicated Y -58 mining station and branch mine established.</p></div></div>
+  <div class="milestone"><span class="milestone-mark">✓</span><div><strong>Early Homestead</strong><p>The starter base became Everhome's first functioning home.</p></div></div>
+</div>
 
-The first Nether portal is operational. Its Nether-side arrival point has been enclosed in cobbled deepslate and marked with a waypoint.
+## Open Frontiers
 
-### First Enchanted Diamond Set
+<div class="frontier-grid">
+  <div class="frontier-card"><strong>Nether Exploration</strong><span>Access established. Broader exploration has not yet begun.</span></div>
+  <div class="frontier-card"><strong>Equipment</strong><span>The first enchanted diamond set is ready. Improvements can arrive naturally through later play.</span></div>
+  <div class="frontier-card"><strong>Permanent Home</strong><span>Everhome still operates from its starter base. The permanent home has not been chosen.</span></div>
+</div>
 
-Everhome's first diamond combat and tool set has been completed and enchanted.
-
-**Pickaxe:** Efficiency IV · Unbreaking III  
-**Axe:** Efficiency IV  
-**Sword:** Sharpness IV · Knockback II  
-**Helmet:** Protection III · Aqua Affinity · Unbreaking III  
-**Chestplate:** Protection IV · Thorns II · Unbreaking III  
-**Leggings:** Protection IV · Unbreaking III  
-**Boots:** Protection IV · Unbreaking III
-
-The shovel remains iron by choice.
-
-### Level-30 Enchanting
-
-A full 15-bookshelf enchanting setup is operational at the starter base, unlocking level-30 enchanting.
-
-### Diamond Age
-
-After early branch mining and a later caving expedition, Everhome gathered enough diamonds to move into its first full diamond armor and primary tool/weapon set.
-
-### Deep Mining Established
-
-A dedicated mining station was established at Y -58 with a west-running main corridor and systematic branch mine.
-
-### Early Homestead
-
-The starter base became Everhome's first functioning home, including livestock pens and the infrastructure needed to support early progression.
-
----
-
-## Progression Frontiers
-
-These are areas of the game Everhome has reached but not exhausted. They are not projects or mandatory objectives.
-
-### Nether Exploration
-
-Access established. Broader exploration has not yet begun.
-
-### Equipment
-
-The first enchanted diamond set is ready for use. Future improvements can happen naturally through books, anvils, exploration, trading, and later progression rather than blocking current adventures.
-
-### Permanent Home
-
-Everhome still operates from its starter base. A permanent home has not yet been selected or established.
-
----
-
-## How Progression Works
-
-This page changes as Everhome advances. It describes the world's **current state** and highlights important milestones.
-
-The [World Journal](/everhome/journal/) preserves the chronological story of how those milestones happened. [Projects](/everhome/projects/) are separate and represent projects explicitly created and managed through World Operations.
-
-In the future, live World Operations information may be surfaced through the Everhome site, but Progression will remain the historical/current-world layer rather than becoming a remote-management screen.
+<div class="ever-note">Frontiers are areas Everhome has reached but not exhausted. They are <strong>not</strong> projects or mandatory objectives.</div>
