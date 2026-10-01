@@ -3,59 +3,40 @@ layout: default
 title: Locations
 permalink: /locations/
 ---
+<div class="section-hero">
+  <div class="ever-kicker">World Atlas</div>
+  <h1>Locations</h1>
+  <p>Places worth remembering, with coordinates as supporting information rather than the whole story.</p>
+</div>
 
-# Locations
+<div class="section-heading"><span>Overworld</span><small>2 documented locations</small></div>
 
-Everhome's atlas of places worth remembering.
+<div class="location-grid">
+  <article class="location-card">
+    <div class="card-top"><span class="status-chip">Active · Temporary</span><span class="dimension-chip">Overworld</span></div>
+    <h2>Starter Base</h2>
+    <p class="card-role">Current home and operating base</p>
+    <p>The operational home of early Everhome. It supports current progression, but it is intentionally a starter base rather than the world's permanent centerpiece.</p>
+    <div class="card-foot">The permanent home will be its own major chapter.</div>
+  </article>
+  <article class="location-card">
+    <div class="card-top"><span class="status-chip">Established</span><span class="dimension-chip">Y -58</span></div>
+    <h2>Mining Station</h2>
+    <p class="card-role">Deep-mining outpost</p>
+    <p>A 5 × 5 × 3 underground station supporting Everhome's branch mine with crafting, smelting, and storage.</p>
+    <div class="meta-row"><span>Main corridor</span><strong>X -1037 · Z -497 · West</strong></div>
+    <div class="card-foot">Branch mining supported early diamond progression before caving became the more enjoyable route.</div>
+  </article>
+</div>
 
-This is more than a coordinate list. Locations record what a place is, why it matters, how it connects to the world's history, and what remains to be done there. As Everhome expands, major locations can graduate into their own dedicated pages.
+<div class="section-heading"><span>Nether</span><small>1 documented location</small></div>
 
-## Overworld
+<article class="location-card nether-accent">
+  <div class="card-top"><span class="status-chip nether-chip">Secured · Route incomplete</span><span class="dimension-chip">Crimson Forest</span></div>
+  <h2>First Nether Portal</h2>
+  <p class="card-role">Everhome's first Nether foothold</p>
+  <p>The portal opens into a huge cavern above a lava sea. Its arrival point is protected by a cobbled deepslate bunker and marked with a waypoint, but there is no natural walkable route to the surrounding terrain.</p>
+  <div class="objective-strip"><small>Current objective</small><strong>Create a safe route to explorable Nether terrain.</strong></div>
+</article>
 
-### Starter Base
-
-**Status:** Active · Temporary  
-**Role:** Current home and operating base
-
-The current operational home of Everhome. It supports the world's early progression, but it is intentionally a starter base rather than Everhome's permanent centerpiece.
-
-The eventual permanent home will be treated as its own major chapter rather than an expansion that quietly turns the starter base into something it was never intended to be.
-
-### Mining Station
-
-**Status:** Established  
-**Dimension:** Overworld  
-**Depth:** Y -58  
-**Role:** Deep-mining outpost
-
-A 5 × 5 × 3 underground station supporting Everhome's branch mine with crafting, smelting, and storage.
-
-**Main corridor:** begins around X -1037, Z -497 and runs west.
-
-The branch mine produced the diamonds used during Everhome's early progression, but routine branch mining was eventually set aside in favor of caving when the repetition stopped being fun.
-
----
-
-## Nether
-
-### First Nether Portal
-
-**Status:** Secured · Route incomplete  
-**Biome:** Crimson Forest  
-**Role:** Everhome's first Nether foothold
-
-Everhome's first dimensional connection opens into a huge cavern above a lava sea. The Nether-side portal has been enclosed in a cobbled deepslate bunker and marked with a waypoint.
-
-The surrounding terrain cannot currently be reached by a natural walkable path from the portal area.
-
-**Current objective:** Create a safe route from the portal bunker to explorable Nether terrain.
-
-This location marks the beginning of Everhome's current chapter, **Into the Nether**.
-
----
-
-## Future Atlas
-
-As the world grows, this section can include villages, biomes, structures, outposts, farms, transportation hubs, Nether landmarks, unusual terrain, and anything else that becomes part of Everhome's story.
-
-Coordinates will be included when useful, but the atlas is meant to answer **“What is this place?”** rather than merely **“Where is it?”**
+<div class="ever-note"><strong>The atlas grows with the world.</strong> Villages, biomes, structures, outposts, farms, transport hubs and unusual terrain can join it whenever they become places that matter.</div>
