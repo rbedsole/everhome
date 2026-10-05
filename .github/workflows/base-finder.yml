@@ -69,7 +69,6 @@ jobs:
             vendor/cubiomes-viewer/cubiomes/layers.c \
             vendor/cubiomes-viewer/cubiomes/noise.c \
             vendor/cubiomes-viewer/cubiomes/quadbase.c \
-            vendor/cubiomes-viewer/cubiomes/structure.c \
             vendor/cubiomes-viewer/cubiomes/util.c \
             -lm -o base_finder_search
 
