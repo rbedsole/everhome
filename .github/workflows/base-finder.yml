@@ -1,6 +1,12 @@
 name: Everhome Base Finder
 
 on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/everhome_search.c"
+      - "scripts/base_finder_remote.py"
+      - ".github/workflows/base-finder.yml"
   workflow_dispatch:
     inputs:
       search_config_b64:
@@ -17,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 330
     env:
-      EVERHOME_SEED: ${{ secrets.EVERHOME_SEED }}
+      EVERHOME_SEED: ${{ github.event_name == 'pull_request' && '1' || secrets.EVERHOME_SEED }}
 
     steps:
       - name: Check out Everhome
@@ -28,7 +34,15 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Decode search definition
+      - name: Create smoke-test search definition
+        if: github.event_name == 'pull_request'
+        run: |
+          cat > search-config.json <<'JSON'
+          {"schema":"everhome.base-finder.search.v1","minecraft_version":"26.2","search_area":{"center_x":0,"center_z":0,"radius_blocks":1000,"coarse_step_blocks":1000},"criteria":[],"execution":{"requested_mode":"remote-smoke-test"}}
+          JSON
+
+      - name: Decode manual search definition
+        if: github.event_name == 'workflow_dispatch'
         env:
           SEARCH_CONFIG_B64: ${{ inputs.search_config_b64 }}
         run: |
