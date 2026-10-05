@@ -16,6 +16,13 @@ def main():
     area=config.get("search_area") or {}
     for k in ("center_x","center_z","radius_blocks","coarse_step_blocks"):
         if k not in area: fail(f"search_area.{k} is required")
+    radius=int(area["radius_blocks"]); step=int(area["coarse_step_blocks"])
+    if radius < 1000: fail("radius_blocks must be at least 1000")
+    if step < 128: fail("coarse_step_blocks must be at least 128 for remote searches")
+    axis_samples=(2*radius)//step+1
+    coarse_samples=axis_samples*axis_samples
+    if coarse_samples > 50000:
+        fail(f"remote search would test about {coarse_samples:,} coarse points; increase coarse_step_blocks or reduce radius (limit 50,000)")
     seed=os.environ.get("EVERHOME_SEED","").strip()
     if not seed: fail("EVERHOME_SEED repository secret is not set")
 
@@ -49,7 +56,7 @@ def main():
         "refinement_step_blocks":32,"final_deduplication_blocks":300,"maximum_results":150,
         "philosophy":"Permissive candidate finder; final terrain/build suitability remains human-reviewed."
       },
-      "runner":{"mode":"github-actions","seed_source":"EVERHOME_SEED","worldgen_engine":"cubiomes-26.2-s8"},
+      "runner":{"mode":"github-actions","seed_source":"EVERHOME_SEED","worldgen_engine":"cubiomes-26.2-s8","coarse_samples":coarse_samples},
       "search_definition":config
     }
     result_path.write_text(json.dumps(result,indent=2)+"\n")
