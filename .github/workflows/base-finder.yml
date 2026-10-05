@@ -48,7 +48,7 @@ jobs:
         run: |
           cc -O3 -std=c11 -fwrapv \
             -I vendor/cubiomes-viewer/cubiomes \
-            scripts/cubiomes_probe.c \
+            scripts/everhome_search.c \
             vendor/cubiomes-viewer/cubiomes/biomenoise.c \
             vendor/cubiomes-viewer/cubiomes/biomes.c \
             vendor/cubiomes-viewer/cubiomes/generator.c \
