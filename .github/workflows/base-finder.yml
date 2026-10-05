@@ -39,8 +39,28 @@ jobs:
               f.write(base64.b64decode(payload))
           PY
 
+      - name: Fetch Cubiomes 26.2 engine
+        run: |
+          git clone --depth 1 --recurse-submodules https://github.com/watchingdogs/cubiomes-viewer-26-2.git vendor/cubiomes-viewer
+          test -f vendor/cubiomes-viewer/cubiomes/generator.h
+
+      - name: Build Cubiomes 26.2 probe
+        run: |
+          cc -O3 -std=c11 -fwrapv \
+            -I vendor/cubiomes-viewer/cubiomes \
+            scripts/cubiomes_probe.c \
+            vendor/cubiomes-viewer/cubiomes/biomenoise.c \
+            vendor/cubiomes-viewer/cubiomes/biomes.c \
+            vendor/cubiomes-viewer/cubiomes/generator.c \
+            vendor/cubiomes-viewer/cubiomes/layers.c \
+            vendor/cubiomes-viewer/cubiomes/noise.c \
+            vendor/cubiomes-viewer/cubiomes/quadbase.c \
+            vendor/cubiomes-viewer/cubiomes/structure.c \
+            vendor/cubiomes-viewer/cubiomes/util.c \
+            -lm -o cubiomes_probe
+
       - name: Validate and run
-        run: python scripts/base_finder_remote.py search-config.json results.json
+        run: python scripts/base_finder_remote.py search-config.json results.json ./cubiomes_probe
 
       - name: Upload search result
         if: always()
