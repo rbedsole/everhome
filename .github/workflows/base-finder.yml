@@ -1,0 +1,53 @@
+name: Everhome Base Finder
+
+on:
+  workflow_dispatch:
+    inputs:
+      search_config_b64:
+        description: "Base64 search payload copied from Everhome Base Finder"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  search:
+    name: Remote base search
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      EVERHOME_SEED: ${{ secrets.EVERHOME_SEED }}
+
+    steps:
+      - name: Check out Everhome
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Decode search definition
+        env:
+          SEARCH_CONFIG_B64: ${{ inputs.search_config_b64 }}
+        run: |
+          python - <<'PY'
+          import base64, os
+          payload = os.environ["SEARCH_CONFIG_B64"]
+          with open("search-config.json", "wb") as f:
+              f.write(base64.b64decode(payload))
+          PY
+
+      - name: Validate and run
+        run: python scripts/base_finder_remote.py search-config.json results.json
+
+      - name: Upload search result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: everhome-base-finder-result
+          path: |
+            search-config.json
+            results.json
+          retention-days: 30
