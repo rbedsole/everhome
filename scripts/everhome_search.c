@@ -11,7 +11,7 @@ typedef struct {
     int x, z;
     float y, plains_pct, relief, avg_deviation;
     int mountain_x, mountain_z;
-    float mountain_y, rise, distance, mass, score;
+    float mountain_y, rise, distance, mass, edge_distance, edge_rise, score;
 } Result;
 
 static Generator g;
@@ -45,9 +45,24 @@ static int analyse(int x,int z,Result *r) {
         if(target>best_score){best_score=target;best_y=y;best_dist=dist;best_x=x+dx;best_z=z+dz;}
     }
     float rise=best_y-avg,mass=mtot?100.0f*high/mtot:0; if(rise<45) return 0;
+    /* Required Everhome geometry: the mountain must begin directly beside the settlement plains.
+       Measure from the edge of the 224x224 settlement sample toward the selected mountain. */
+    float vx=(float)(best_x-x), vz=(float)(best_z-z), vlen=sqrtf(vx*vx+vz*vz);
+    float edge_dist=9999.0f, edge_rise=-9999.0f;
+    if(vlen>0){
+        float ux=vx/vlen, uz=vz/vlen;
+        for(int d=112;d<=320;d+=16){
+            int sx=x+(int)lroundf(ux*d), sz=z+(int)lroundf(uz*d); float sy; int sid; terrain(sx,sz,&sy,&sid);
+            float srise=sy-avg;
+            if(!is_plains(sid) && srise>=20.0f){edge_dist=(float)(d-112); edge_rise=srise; break;}
+        }
+    }
+    /* Mountain foot must start within 96 blocks of the settlement sample edge. */
+    if(edge_dist>96.0f) return 0;
     float flat=15.0f-avgdev; if(flat<0) flat=0; float prox=800.0f-best_dist; if(prox<0) prox=0;
-    float score=plains_pct*0.40f+flat*2.0f+rise*0.30f+mass*0.80f+prox*0.025f;
-    *r=(Result){x,z,avg,plains_pct,relief,avgdev,best_x,best_z,best_y,rise,best_dist,mass,score};
+    float adjacency=96.0f-edge_dist; if(adjacency<0) adjacency=0;
+    float score=plains_pct*0.40f+flat*2.0f+rise*0.30f+mass*0.80f+prox*0.025f+adjacency*0.10f;
+    *r=(Result){x,z,avg,plains_pct,relief,avgdev,best_x,best_z,best_y,rise,best_dist,mass,edge_dist,edge_rise,score};
     return 1;
 }
 int main(int argc,char **argv) {
@@ -65,14 +80,14 @@ int main(int argc,char **argv) {
         }
     }
     qsort(results,n,sizeof(Result),cmp); FILE *out=fopen(outpath,"w"); if(!out){free(results);return 4;}
-    fprintf(out,"rank,x,z,y,plains_pct,relief,avg_deviation,mountain_x,mountain_z,mountain_y,rise,mountain_distance,mountain_mass,score\n");
+    fprintf(out,"rank,x,z,y,plains_pct,relief,avg_deviation,mountain_x,mountain_z,mountain_y,rise,mountain_distance,mountain_mass,mountain_edge_distance,mountain_edge_rise,score\n");
     Result kept[150]; int k=0;
     for(int i=0;i<n&&k<150;i++){
         int dup=0; for(int j=0;j<k;j++){long long dx=results[i].x-kept[j].x,dz=results[i].z-kept[j].z;if(dx*dx+dz*dz<90000LL){dup=1;break;}}
         if(dup) continue; kept[k]=results[i];
-        fprintf(out,"%d,%d,%d,%.1f,%.1f,%.1f,%.2f,%d,%d,%.1f,%.1f,%.1f,%.2f,%.2f\n",
+        fprintf(out,"%d,%d,%d,%.1f,%.1f,%.1f,%.2f,%d,%d,%.1f,%.1f,%.1f,%.2f,%.1f,%.1f,%.2f\n",
           k+1,results[i].x,results[i].z,results[i].y,results[i].plains_pct,results[i].relief,results[i].avg_deviation,
-          results[i].mountain_x,results[i].mountain_z,results[i].mountain_y,results[i].rise,results[i].distance,results[i].mass,results[i].score); k++;
+          results[i].mountain_x,results[i].mountain_z,results[i].mountain_y,results[i].rise,results[i].distance,results[i].mass,results[i].edge_distance,results[i].edge_rise,results[i].score); k++;
     }
     fclose(out); free(results); fprintf(stderr,"kept %d candidates\n",k); return 0;
 }
