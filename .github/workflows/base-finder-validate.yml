@@ -1,0 +1,42 @@
+name: Base Finder Engine Validation
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out Base Finder feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/base-finder
+
+      - name: Fetch Cubiomes 26.2
+        run: |
+          git clone --depth 1 --recurse-submodules https://github.com/watchingdogs/cubiomes-viewer-26-2.git vendor/cubiomes-viewer
+          test -f vendor/cubiomes-viewer/cubiomes/generator.h
+
+      - name: Compile search engine
+        run: |
+          cc -O3 -std=c11 -fwrapv \
+            -I vendor/cubiomes-viewer/cubiomes \
+            scripts/everhome_search.c \
+            vendor/cubiomes-viewer/cubiomes/biomenoise.c \
+            vendor/cubiomes-viewer/cubiomes/biomes.c \
+            vendor/cubiomes-viewer/cubiomes/generator.c \
+            vendor/cubiomes-viewer/cubiomes/layers.c \
+            vendor/cubiomes-viewer/cubiomes/noise.c \
+            vendor/cubiomes-viewer/cubiomes/quadbase.c \
+            vendor/cubiomes-viewer/cubiomes/structure.c \
+            vendor/cubiomes-viewer/cubiomes/util.c \
+            -lm -o base_finder_search
+
+      - name: Smoke test
+        run: |
+          ./base_finder_search 1 0 0 1000 1000 smoke.csv
+          head -n 5 smoke.csv
