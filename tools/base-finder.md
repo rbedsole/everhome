@@ -50,8 +50,8 @@ permalink: /tools/base-finder/
     </div>
 
     <label class="finder-field"><span>Radius (blocks)</span><input id="bf-radius" type="number" min="1000" step="1000" value="50000"></label>
-    <label class="finder-field"><span>Coarse sample spacing (blocks)</span><input id="bf-step" type="number" min="16" step="16" value="256"></label>
-    <small class="finder-help">The runner can refine promising areas later. A coarse first pass keeps broad searches practical.</small>
+    <label class="finder-field"><span>Coarse sample spacing (blocks)</span><input id="bf-step" type="number" min="32" step="32" value="1024"></label>
+    <small class="finder-help">The runner refines promising areas at 32-block resolution after this pass. 1024 blocks is the recommended starting spacing for a large remote search.</small>
   </section>
 </div>
 
