@@ -75,7 +75,7 @@
         center_x: Number($("bf-center-x").value || 0),
         center_z: Number($("bf-center-z").value || 0),
         radius_blocks: Number($("bf-radius").value || 50000),
-        coarse_step_blocks: Number($("bf-step").value || 256)
+        coarse_step_blocks: Number($("bf-step").value || 1024)
       },
       criteria: getCriteria(),
       execution: {
@@ -134,7 +134,7 @@
         $("bf-center-x").value = saved.search_area.center_x ?? 0;
         $("bf-center-z").value = saved.search_area.center_z ?? 0;
         $("bf-radius").value = saved.search_area.radius_blocks ?? 50000;
-        $("bf-step").value = saved.search_area.coarse_step_blocks ?? 256;
+        $("bf-step").value = saved.search_area.coarse_step_blocks ?? 1024;
       }
       const rows = Array.isArray(saved?.criteria) && saved.criteria.length ? saved.criteria : defaultCriteria;
       rows.forEach(addCriterion);
