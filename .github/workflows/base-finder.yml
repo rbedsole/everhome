@@ -1,0 +1,98 @@
+name: Everhome Base Finder
+
+on:
+  push:
+    branches: [feature/base-finder]
+    paths:
+      - ".github/workflows/base-finder.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/everhome_search.c"
+      - "scripts/base_finder_remote.py"
+      - ".github/workflows/base-finder.yml"
+  workflow_dispatch:
+    inputs:
+      search_config_b64:
+        description: "Base64 search payload copied from Everhome Base Finder"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  search:
+    name: Remote base search
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      EVERHOME_SEED: ${{ github.event_name == 'pull_request' && '1' || secrets.EVERHOME_SEED }}
+
+    steps:
+      - name: Check out Everhome
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Create smoke-test search definition
+        if: github.event_name == 'pull_request'
+        run: |
+          cat > search-config.json <<'JSON'
+          {"schema":"everhome.base-finder.search.v1","minecraft_version":"26.2","search_area":{"center_x":0,"center_z":0,"radius_blocks":1000,"coarse_step_blocks":1000},"criteria":[],"execution":{"requested_mode":"remote-smoke-test"}}
+          JSON
+
+      - name: Create real-seed validation search definition
+        if: github.event_name == 'push'
+        run: |
+          cat > search-config.json <<'JSON'
+          {"schema":"everhome.base-finder.search.v1","minecraft_version":"26.2","search_area":{"center_x":0,"center_z":0,"radius_blocks":20000,"coarse_step_blocks":512},"criteria":[],"execution":{"requested_mode":"remote-adjacency-search"}}
+          JSON
+
+      - name: Decode manual search definition
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          SEARCH_CONFIG_B64: ${{ inputs.search_config_b64 }}
+        run: |
+          python - <<'PY'
+          import base64, os
+          payload = os.environ["SEARCH_CONFIG_B64"]
+          with open("search-config.json", "wb") as f:
+              f.write(base64.b64decode(payload))
+          PY
+
+      - name: Fetch Cubiomes 26.2 engine
+        run: |
+          git clone --depth 1 --recurse-submodules https://github.com/watchingdogs/cubiomes-viewer-26-2.git vendor/cubiomes-viewer
+          test -f vendor/cubiomes-viewer/cubiomes/generator.h
+
+      - name: Build Everhome 26.2 search engine
+        run: |
+          cc -O3 -std=c11 -fwrapv \
+            -I vendor/cubiomes-viewer/cubiomes \
+            scripts/everhome_search.c \
+            vendor/cubiomes-viewer/cubiomes/biomenoise.c \
+            vendor/cubiomes-viewer/cubiomes/biomes.c \
+            vendor/cubiomes-viewer/cubiomes/generator.c \
+            vendor/cubiomes-viewer/cubiomes/layers.c \
+            vendor/cubiomes-viewer/cubiomes/noise.c \
+            vendor/cubiomes-viewer/cubiomes/quadbase.c \
+            vendor/cubiomes-viewer/cubiomes/util.c \
+            -lm -o base_finder_search
+
+      - name: Validate and run
+        run: python scripts/base_finder_remote.py search-config.json results.json ./base_finder_search
+
+      - name: Upload search result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: everhome-base-finder-result
+          path: |
+            search-config.json
+            results.json
+            refined-candidates.csv
+          retention-days: 30
