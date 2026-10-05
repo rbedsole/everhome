@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -22,11 +23,12 @@ def fail(message: str) -> None:
 
 
 def main() -> int:
-    if len(sys.argv) != 3:
-        fail("usage: base_finder_remote.py SEARCH_CONFIG RESULTS")
+    if len(sys.argv) != 4:
+        fail("usage: base_finder_remote.py SEARCH_CONFIG RESULTS CUBIOMES_PROBE")
 
     config_path = Path(sys.argv[1])
     result_path = Path(sys.argv[2])
+    probe_path = Path(sys.argv[3])
 
     try:
         config = json.loads(config_path.read_text(encoding="utf-8"))
@@ -45,8 +47,21 @@ def main() -> int:
     if not isinstance(criteria, list):
         fail("criteria must be a list")
 
-    seed_present = bool(os.environ.get("EVERHOME_SEED", "").strip())
-    status = "engine_pending" if seed_present else "blocked_missing_seed_secret"
+    seed_text = os.environ.get("EVERHOME_SEED", "").strip()
+    seed_present = bool(seed_text)
+    engine_probe = None
+    status = "blocked_missing_seed_secret"
+
+    if seed_present:
+        try:
+            probe = subprocess.run(
+                [str(probe_path.resolve()), seed_text, str(area["center_x"]), "64", str(area["center_z"])],
+                check=True, capture_output=True, text=True,
+            )
+            engine_probe = json.loads(probe.stdout)
+            status = "engine_ready_search_logic_pending"
+        except Exception as exc:
+            fail(f"Cubiomes 26.2 engine probe failed: {exc}")
 
     result = {
         "schema": "everhome.base-finder.result.v1",
@@ -59,12 +74,13 @@ def main() -> int:
             "mode": "github-actions",
             "seed_source": "EVERHOME_SEED",
             "seed_available": seed_present,
-            "worldgen_engine": "pending-cubiomes-26.2",
+            "worldgen_engine": "cubiomes-26.2",
+            "engine_probe": engine_probe,
         },
         "message": (
-            "Remote handoff is working. Cubiomes 26.2 candidate generation is the next integration step."
+            "Cubiomes 26.2 is running against Everhome's seed. Candidate scoring remains disabled until the established Everhome criteria are mapped to objective tests."
             if seed_present
-            else "Set the repository Actions secret EVERHOME_SEED before the remote engine is connected."
+            else "Set the repository Actions secret EVERHOME_SEED to enable the remote engine."
         ),
         "search_definition": config,
     }
