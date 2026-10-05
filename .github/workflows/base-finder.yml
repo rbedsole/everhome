@@ -44,7 +44,7 @@ jobs:
           git clone --depth 1 --recurse-submodules https://github.com/watchingdogs/cubiomes-viewer-26-2.git vendor/cubiomes-viewer
           test -f vendor/cubiomes-viewer/cubiomes/generator.h
 
-      - name: Build Cubiomes 26.2 probe
+      - name: Build Everhome 26.2 search engine
         run: |
           cc -O3 -std=c11 -fwrapv \
             -I vendor/cubiomes-viewer/cubiomes \
@@ -57,10 +57,10 @@ jobs:
             vendor/cubiomes-viewer/cubiomes/quadbase.c \
             vendor/cubiomes-viewer/cubiomes/structure.c \
             vendor/cubiomes-viewer/cubiomes/util.c \
-            -lm -o cubiomes_probe
+            -lm -o base_finder_search
 
       - name: Validate and run
-        run: python scripts/base_finder_remote.py search-config.json results.json ./cubiomes_probe
+        run: python scripts/base_finder_remote.py search-config.json results.json ./base_finder_search
 
       - name: Upload search result
         if: always()
@@ -70,4 +70,5 @@ jobs:
           path: |
             search-config.json
             results.json
+            refined-candidates.csv
           retention-days: 30
