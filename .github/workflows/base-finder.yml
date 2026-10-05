@@ -1,6 +1,10 @@
 name: Everhome Base Finder
 
 on:
+  push:
+    branches: [feature/base-finder]
+    paths:
+      - ".github/workflows/base-finder.yml"
   pull_request:
     branches: [main]
     paths:
@@ -39,6 +43,13 @@ jobs:
         run: |
           cat > search-config.json <<'JSON'
           {"schema":"everhome.base-finder.search.v1","minecraft_version":"26.2","search_area":{"center_x":0,"center_z":0,"radius_blocks":1000,"coarse_step_blocks":1000},"criteria":[],"execution":{"requested_mode":"remote-smoke-test"}}
+          JSON
+
+      - name: Create real-seed validation search definition
+        if: github.event_name == 'push'
+        run: |
+          cat > search-config.json <<'JSON'
+          {"schema":"everhome.base-finder.search.v1","minecraft_version":"26.2","search_area":{"center_x":0,"center_z":0,"radius_blocks":1000,"coarse_step_blocks":1000},"criteria":[],"execution":{"requested_mode":"remote-real-seed-validation"}}
           JSON
 
       - name: Decode manual search definition
