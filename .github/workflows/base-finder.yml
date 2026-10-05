@@ -49,7 +49,7 @@ jobs:
         if: github.event_name == 'push'
         run: |
           cat > search-config.json <<'JSON'
-          {"schema":"everhome.base-finder.search.v1","minecraft_version":"26.2","search_area":{"center_x":0,"center_z":0,"radius_blocks":1000,"coarse_step_blocks":1000},"criteria":[],"execution":{"requested_mode":"remote-real-seed-validation"}}
+          {"schema":"everhome.base-finder.search.v1","minecraft_version":"26.2","search_area":{"center_x":0,"center_z":0,"radius_blocks":20000,"coarse_step_blocks":512},"criteria":[],"execution":{"requested_mode":"remote-broad-search"}}
           JSON
 
       - name: Decode manual search definition
