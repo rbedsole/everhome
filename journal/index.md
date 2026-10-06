@@ -9,16 +9,23 @@ permalink: /journal/
   <p>Everhome's permanent chronological record: expeditions, discoveries, construction, setbacks, milestones, and the ordinary days that turn a save into a forever world.</p>
 </div>
 
-<div class="feature-card nether-accent">
+<div class="feature-card">
   <span class="ever-label">Current Chapter</span>
-  <h2>Into the Nether</h2>
-  <p>Everhome has crossed its first major threshold into the Nether. The portal is secure, but its cavern spawn has left the expedition without a natural route into the surrounding terrain.</p>
-  <a class="ever-action" href="{{ '/journal/2026-09-30.html' | relative_url }}">Read the latest entry →</a>
+  <h2>Establishing Everhome</h2>
+  <p>The permanent mountain-and-plains site has been chosen, the main house is in place, and the world is beginning its transition from early-game homestead to permanent settlement.</p>
+  <a class="ever-action" href="{{ '/journal/2026-10-06.html' | relative_url }}">Read the latest entry →</a>
 </div>
 
 ## 2026
 
 <div class="timeline">
+  <article class="timeline-entry">
+    <div class="timeline-date">OCT 06</div>
+    <div>
+      <h3><a href="{{ '/journal/2026-10-06.html' | relative_url }}">Establishing Everhome</a></h3>
+      <p>The permanent site becomes Everhome, Starter House #82 establishes the main base, and a roadmap takes shape for mountain storage, farms, villagers, quarrying, and transport.</p>
+    </div>
+  </article>
   <article class="timeline-entry">
     <div class="timeline-date">SEP 30</div>
     <div>
