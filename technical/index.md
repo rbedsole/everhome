@@ -12,8 +12,8 @@ permalink: /technical/
 <div class="tech-platform">
   <div><small>Minecraft</small><strong>26.2</strong></div>
   <div><small>Server</small><strong>Fabric</strong></div>
-  <div><small>Java</small><strong>25.0.1 LTS</strong></div>
-  <div><small>Memory</small><strong>8192 MB</strong></div>
+  <div><small>Java</small><strong>25.0.1</strong></div>
+  <div><small>Client Memory</small><strong>8192 MB target</strong></div>
 </div>
 
 ## Known-Good Rendering Stack
@@ -21,22 +21,21 @@ permalink: /technical/
 <div class="known-good">
   <div class="known-good-head"><span class="status-dot"></span><div><span class="ever-label">Pinned & Working</span><strong>Voxy distant-terrain stack</strong></div></div>
   <div class="config-grid">
-    <div><small>Voxy</small><strong>0.2.19-beta</strong></div><div><small>Iris</small><strong>1.11.2</strong></div><div><small>Sodium</small><strong>0.9.1</strong></div><div><small>Render Distance</small><strong>512</strong></div><div><small>Server LOD</small><strong>512</strong></div><div><small>Receive Server LODs</small><strong>On</strong></div>
+    <div><small>Voxy</small><strong>0.2.19-beta</strong></div><div><small>Iris</small><strong>1.11.2</strong></div><div><small>Sodium</small><strong>0.9.1</strong></div><div><small>Voxy Extra</small><strong>0.2.6</strong></div><div><small>Voxy World Gen V2</small><strong>2.4.3</strong></div><div><small>VoxyServer</small><strong>1.2.4</strong></div>
   </div>
-  <p>Iris 1.11.4 + Sodium 0.9.2 prevented Voxy LODs beyond normal terrain. Returning to this combination restored expected behavior. Do not casually update it without a reason and a way to verify distant terrain.</p>
+  <p>Preserve known-good combinations unless an update solves a real problem. The Voxy family is also a first suspect if high-memory distant-terrain workloads cause another client heap failure.</p>
 </div>
 
 <div class="tech-grid">
-  <article class="tech-card"><span class="ever-label">Lighting</span><h3>Beltborne Lantern</h3><p>LambDynamicLights <strong>First Person Lighting</strong> must remain enabled for the lantern's dynamic light to work.</p></article>
-  <article class="tech-card"><span class="ever-label">Server Detail</span><h3>Voxy Server Side</h3><p>Installed with successful startup/backfill and client handshake. Preserve the working configuration while the rendering stack remains stable.</p></article>
-  <article class="tech-card"><span class="ever-label">Custom Fix</span><h3>Zombie Aggro Tweaks</h3><p>Custom server-side behavior mod maintained specifically for Everhome.</p></article>
-  <article class="tech-card"><span class="ever-label">Custom Fix</span><h3>Health Indicator+ Fix</h3><p>Everhome-specific compatibility fix maintained alongside Health Indicator+.</p></article>
+  <article class="tech-card"><span class="ever-label">Memory</span><h3>Client Heap</h3><p>An October 2026 crash was a Java heap exhaustion at a 4096 MB maximum. The Everhome Prism profile should use 2048 MB minimum and 8192 MB maximum; if an 8 GB heap also fails, investigate the workload or a leak rather than blindly allocating huge amounts of RAM.</p></article>
+  <article class="tech-card"><span class="ever-label">Lighting</span><h3>Dynamic Lighting</h3><p>The earlier belt lantern failure was caused by first-person lighting being disabled. Re-enabling first-person lighting restored portable light.</p></article>
+  <article class="tech-card"><span class="ever-label">Custom Fix</span><h3>Zombie Aggro Tweaks</h3><p>Everhome uses this specifically to disable the zombie revenge mechanic. It should not be treated as a mod that increases zombie danger around villagers.</p></article>
+  <article class="tech-card"><span class="ever-label">Construction</span><h3>WorldEdit & Litematica</h3><p>WorldEdit handles large-scale terrain work, excavation, corrections, and deliberate schematic placement. Litematica is available when a build should be constructed from a blueprint rather than pasted complete.</p></article>
+  <article class="tech-card"><span class="ever-label">Interface</span><h3>REI</h3><p>REI is now installed client-side as well as being present in the server setup, resolving the earlier absence of the recipe/item interface on the client.</p></article>
 </div>
 
-## Stability Philosophy
+## Infrastructure Mods to Remember
 
-<div class="ever-callout"><strong>Known-good beats merely newer.</strong><p>Changes should solve a problem, add something worthwhile, or support a deliberate Minecraft upgrade. When a compatibility problem is solved, the working combination gets recorded so the same dragon does not need to be slain twice.</p></div>
+<div class="tag-cloud"><span>Bag Of Holding</span><span>Linked Chests</span><span>Nether Chested</span><span>Echo Chest</span><span>Hopper Gadgetry</span><span>FarmTweaks</span><span>Toss To Feed</span><span>Simple Quarries</span><span>Trading Post</span><span>Trade Cycling</span><span>Enchanting Infuser</span><span>Easy Magic</span><span>Easy Anvils</span><span>Universal Enchants</span><span>Magnum Torch</span></div>
 
-## Future Technical Library
-
-<div class="tag-cloud"><span>Mods & placement</span><span>Server configuration</span><span>Rendering & shaders</span><span>Controller setup</span><span>Custom patches</span><span>Troubleshooting</span><span>Version upgrades</span><span>Backups & recovery</span></div>
+<div class="ever-callout"><strong>Known-good beats merely newer.</strong><p>Changes should solve a problem, add something worthwhile, or support a deliberate Minecraft upgrade. When a compatibility problem is solved, record the working combination so the same dragon does not need to be slain twice.</p></div>
