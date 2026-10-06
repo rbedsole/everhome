@@ -4,7 +4,9 @@ A living journal and companion site chronicling the adventures, builds, discover
 
 ## Current chapter
 
-**Into the Nether** — Nether access is established, but the protected portal spawned isolated above a lava sea. The next objective is creating a safe route out of the portal cavern.
+**Establishing Everhome** — The permanent home has been chosen at the foot of the mountains beside the plains. The main house is in place, and the next chapter is turning the new site into the world's permanent operational center before expanding into mountain storage, farms, villagers, industry, and transport.
+
+The former starter base is abandoned. Its old Nether portal is legacy infrastructure and is not part of Everhome's future transport network.
 
 This repository is the source for the Everhome world journal and companion website.
 
