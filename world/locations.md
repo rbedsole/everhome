@@ -16,8 +16,8 @@ permalink: /locations/
     <div class="card-top"><span class="status-chip">Active · Permanent</span><span class="dimension-chip">Overworld</span></div>
     <h2>Everhome</h2>
     <p class="card-role">Permanent home and operating center</p>
-    <p>The former Candidate 1 site is now Everhome itself: broad plains immediately beside a dramatic mountain range. The permanent main base sits at the foot of the mountain, with the future storage complex planned inside the mountain and room for farms, workshops, villagers, and infrastructure to grow across the plains.</p>
-    <div class="card-foot">Main house: Brictora Starter House #82 · entrance faces west · complete schematic footprint 41 × 41.</div>
+    <p>The former Candidate 1 site is now Everhome itself: broad plains immediately beside a dramatic mountain range. Everhome sits at the foot of the mountain, with the future storage complex planned inside the mountain and room for farms, workshops, villagers, and infrastructure to grow across the plains.</p>
+    <div class="card-foot">Everhome's main entrance faces west · initial complete footprint 41 × 41.</div>
   </article>
   <article class="location-card">
     <div class="card-top"><span class="status-chip">Nearby</span><span class="dimension-chip">Overworld</span></div>
