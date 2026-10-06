@@ -6,25 +6,32 @@ permalink: /resources/
 <div class="section-hero">
   <div class="ever-kicker">Supply & Infrastructure</div>
   <h1>Resources</h1>
-  <p>Where important materials come from, what is renewable, what has been scarce, and the infrastructure that supports Everhome.</p>
+  <p>Where important materials come from, what is renewable, and the infrastructure being built to support Everhome.</p>
 </div>
 
-<div class="resource-summary"><span class="status-dot"></span><div><small>Current Resource Picture</small><strong>No major bottleneck</strong><p>The leather shortage is resolved, level-30 enchanting is complete, diamond equipment is established, and deep mining left substantial building material available.</p></div></div>
+<div class="resource-summary"><span class="status-dot"></span><div><small>Current Resource Picture</small><strong>Permanent infrastructure beginning</strong><p>The permanent main house is started. The next major infrastructure project is the already-selected mountain storage build with automatic sorting.</p></div></div>
 
-## Resource Sources
+## Storage & Logistics
 
 <div class="resource-grid">
-  <article class="resource-card"><span class="resource-type">Building</span><h3>Building Stone</h3><p>Cobbled deepslate is readily available from deep mining, with the mining station serving as its main source and storage point.</p></article>
-  <article class="resource-card"><span class="resource-type">Valuable</span><h3>Diamonds</h3><p>Early supply came from the Y -58 branch mine. Caving later supplied the diamonds needed to finish the first equipment set.</p><div class="card-foot">No mandatory diamond grind right now.</div></article>
-  <article class="resource-card"><span class="resource-type">Renewable</span><h3>Leather</h3><p>The starter-base cow herd provides a renewable source. Village books helped resolve the original enchanting bottleneck.</p></article>
-  <article class="resource-card"><span class="resource-type">Renewable</span><h3>Sugar Cane & Paper</h3><p>Sugar cane is established and provides a renewable paper supply. It was never the limiting factor during the enchanting push.</p></article>
-  <article class="resource-card"><span class="resource-type">Renewable</span><h3>Food</h3><p>Starter-base livestock provides renewable food and can be expanded or automated if normal play creates a reason.</p></article>
+  <article class="resource-card"><span class="resource-type">Planned</span><h3>Mountain Storage</h3><p>The storage build has already been selected. It will be excavated into Everhome's mountain and will use automatic item sorting rather than a manual chest wall.</p></article>
+  <article class="resource-card"><span class="resource-type">Bulk</span><h3>Nether Chests</h3><p>A single Nether Chest provides 54 inventory slots with enlarged stack capacity, making it a candidate for high-volume materials if it integrates cleanly with the final sorter.</p></article>
+  <article class="resource-card"><span class="resource-type">Logistics</span><h3>Hopper Gadgetry</h3><p>Filtered hoppers, ducts, chutes, and related components are candidates for hidden routing behind the storage build and future farms.</p></article>
+  <article class="resource-card"><span class="resource-type">Remote Access</span><h3>Linked Chests</h3><p>Potential remote access points can connect useful locations to shared inventories without dictating the visible architecture.</p></article>
+  <article class="resource-card"><span class="resource-type">Mobile</span><h3>Gold Bag of Holding</h3><p>The current gold bag serves as mobile cargo for mining, exploration, construction, and material hauling rather than permanent storage.</p></article>
 </div>
 
-## Farms & Automation
+## Farms & Production
 
-<div class="ever-callout"><strong>Useful first, automated second.</strong><p>Everhome is open to farms when they solve a real problem, remove a recurring annoyance, or make an interesting build. A farm does not need to exist simply because it can.</p></div>
+<div class="ever-callout"><strong>Useful first, automated second.</strong><p>Everhome's surrounding buildings will be farms and production facilities added when they solve a real need. FarmTweaks can support dispenser planting and easier crop handling, while Toss To Feed can support more natural-looking automated livestock breeding.</p></div>
 
-## Future Live Data
+<div class="resource-grid">
+  <article class="resource-card"><span class="resource-type">Planned</span><h3>Crop Farmstead</h3><p>A future crop building can remain visually agricultural while hiding useful automation.</p></article>
+  <article class="resource-card"><span class="resource-type">Planned</span><h3>Barn & Pasture</h3><p>Toss To Feed makes a proper livestock area practical without reducing animals to a cramped breeding machine.</p></article>
+  <article class="resource-card"><span class="resource-type">Planned</span><h3>Lumber Operation</h3><p>Leaves Be Gone reduces cleanup overhead and makes a landscaped renewable wood operation practical.</p></article>
+  <article class="resource-card"><span class="resource-type">Future Industry</span><h3>Quarry Operation</h3><p>A permanent mining facility will handle supplies and output while Simple Quarry heads move between extraction areas as individual sites reach the bottom of the world.</p></article>
+</div>
 
-<div class="future-panel"><span class="ever-label">World Operations</span><h3>Inventory intelligence belongs here eventually.</h3><p>A future live layer could answer questions such as <strong>“How much iron do I have?”</strong> or <strong>“Where is my cobbled deepslate?”</strong> from actual world data while this page remains the durable resource guide.</p></div>
+## Design Principle
+
+<div class="future-panel"><span class="ever-label">Everhome Logistics</span><h3>Visible storage is architecture. Hidden storage is infrastructure.</h3><p>The chosen mountain build determines what the storage complex looks like. Sorting, bulk storage, routing, and remote access can live behind the walls and beneath the floors where they improve function without taking over the design.</p></div>
