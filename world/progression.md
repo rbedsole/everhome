@@ -12,14 +12,14 @@ permalink: /progression/
 <div class="feature-card">
   <span class="ever-label">Current Chapter</span>
   <h2>Establishing Everhome</h2>
-  <p>The permanent site has been chosen and the main house has been placed. The immediate work is settling in, cleaning up the one artificial terrain corner, establishing Everhome's own Nether access, and preparing for the first major expansion.</p>
+  <p>The permanent site has been chosen and Everhome has been placed. The immediate work is settling in, cleaning up the one artificial terrain corner, establishing Everhome's own Nether access, and preparing for the first major expansion.</p>
 </div>
 
 ## Major Milestones
 
 <div class="milestone-list">
   <div class="milestone"><span class="milestone-mark">✓</span><div><strong>Permanent Home Chosen</strong><p>The former Candidate 1 mountain-and-plains site is now simply Everhome: the permanent center of the world.</p></div></div>
-  <div class="milestone"><span class="milestone-mark">✓</span><div><strong>Main House Started</strong><p>Brictora Starter House #82 has been placed at Everhome with its main entrance facing west. The complete schematic occupies a 41 × 41 footprint.</p></div></div>
+  <div class="milestone"><span class="milestone-mark">✓</span><div><strong>Everhome Started</strong><p>Everhome's main residence has been placed at the foot of the mountain with its entrance facing west. The complete initial build occupies a 41 × 41 footprint.</p></div></div>
   <div class="milestone"><span class="milestone-mark">✓</span><div><strong>First Nether Access</strong><p>The world's first Nether portal was established and secured during the starter-base era. That portal is now legacy infrastructure rather than part of the permanent transport network.</p></div></div>
   <div class="milestone"><span class="milestone-mark">✓</span><div><strong>First Enchanted Diamond Set</strong><p>Diamond combat gear and primary tools were completed and enchanted during the starter-base era.</p></div></div>
   <div class="milestone"><span class="milestone-mark">✓</span><div><strong>Level-30 Enchanting</strong><p>A full 15-bookshelf enchanting setup was established at the starter base.</p></div></div>
@@ -29,7 +29,7 @@ permalink: /progression/
 ## Development Roadmap
 
 <div class="frontier-grid">
-  <div class="frontier-card"><strong>1 · Settle Everhome</strong><span>Blend the artificial grass corner into the terrain, make the main house operational, set spawn, establish Everhome's own Nether portal, and take stock of supplies.</span></div>
+  <div class="frontier-card"><strong>1 · Settle Everhome</strong><span>Blend the artificial grass corner into the terrain, make Everhome operational, set spawn, establish Everhome's own Nether portal, and take stock of supplies.</span></div>
   <div class="frontier-card"><strong>2 · Mountain Storage</strong><span>The storage build is already chosen. Excavate for it with WorldEdit, construct it in the mountain, and integrate automatic sorting and useful storage/logistics mods.</span></div>
   <div class="frontier-card"><strong>3 · Renewable Production</strong><span>Add crop, livestock, wood, and other production buildings as actual needs arise. Paths grow organically between useful destinations.</span></div>
   <div class="frontier-card"><strong>4 · Everhome Population</strong><span>A nearby village can provide the first two settlers. Breed a new Everhome population and let villagers inhabit functional buildings rather than a conventional trading hall.</span></div>
