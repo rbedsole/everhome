@@ -21,7 +21,7 @@ permalink: /technical/
 <div class="known-good">
   <div class="known-good-head"><span class="status-dot"></span><div><span class="ever-label">Everhome World</span><strong>Seed 888882571486312935</strong></div></div>
   <div class="config-grid">
-    <div><small>Edition</small><strong>Java</strong></div><div><small>Production Version</small><strong>26.2</strong></div><div><small>Loader</small><strong>Fabric</strong></div><div><small>Launcher</small><strong>Prism Launcher 11.1.1</strong></div><div><small>Server Memory</small><strong>6 GB</strong></div><div><small>Java Runtime</small><strong>25.0.1 · 64-bit</strong></div>
+    <div><small>Edition</small><strong>Java</strong></div><div><small>Production Version</small><strong>26.2</strong></div><div><small>Loader</small><strong>Fabric</strong></div><div><small>Launcher</small><strong>Prism Launcher 11.1.1</strong></div><div><small>Server Memory</small><strong>8 GB</strong></div><div><small>Java Runtime</small><strong>25.0.1 · 64-bit</strong></div>
   </div>
   <p>The seed is part of Everhome's permanent technical identity and should be kept with the repository rather than reconstructed from old records.</p>
 </div>
