@@ -10,10 +10,20 @@ permalink: /technical/
 </div>
 
 <div class="tech-platform">
-  <div><small>Minecraft</small><strong>26.2</strong></div>
+  <div><small>Minecraft</small><strong>Java 26.2</strong></div>
   <div><small>Server</small><strong>Fabric</strong></div>
   <div><small>Java</small><strong>25.0.1</strong></div>
-  <div><small>Client Memory</small><strong>8192 MB target</strong></div>
+  <div><small>Client Memory</small><strong>2048–8192 MB</strong></div>
+</div>
+
+## World Identity
+
+<div class="known-good">
+  <div class="known-good-head"><span class="status-dot"></span><div><span class="ever-label">Everhome World</span><strong>Seed 888882571486312935</strong></div></div>
+  <div class="config-grid">
+    <div><small>Edition</small><strong>Java</strong></div><div><small>Production Version</small><strong>26.2</strong></div><div><small>Loader</small><strong>Fabric</strong></div><div><small>Launcher</small><strong>Prism Launcher 11.1.1</strong></div><div><small>Server Memory</small><strong>6 GB</strong></div><div><small>Java Runtime</small><strong>25.0.1 · 64-bit</strong></div>
+  </div>
+  <p>The seed is part of Everhome's permanent technical identity and should be kept with the repository rather than reconstructed from old records.</p>
 </div>
 
 ## Known-Good Rendering Stack
@@ -34,8 +44,12 @@ permalink: /technical/
   <article class="tech-card"><span class="ever-label">Interface</span><h3>REI</h3><p>REI is now installed client-side as well as being present in the server setup, resolving the earlier absence of the recipe/item interface on the client.</p></article>
 </div>
 
+## Settlement Direction
+
+<div class="ever-callout"><strong>MineColonies is the planned settlement framework.</strong><p>The current intention is to use the unofficial Fabric MineColonies port for Everhome's inhabited settlement, unless a demonstrably better compatible alternative is found before installation. MineColonies would provide citizens, functional buildings, production chains, and Warehouse/Courier logistics. The player's residence and mountain master-storage system remain separate from the colony economy.</p></div>
+
 ## Infrastructure Mods to Remember
 
-<div class="tag-cloud"><span>Bag Of Holding</span><span>Linked Chests</span><span>Nether Chested</span><span>Echo Chest</span><span>Hopper Gadgetry</span><span>FarmTweaks</span><span>Toss To Feed</span><span>Simple Quarries</span><span>Trading Post</span><span>Trade Cycling</span><span>Enchanting Infuser</span><span>Easy Magic</span><span>Easy Anvils</span><span>Universal Enchants</span><span>Magnum Torch</span></div>
+<div class="tag-cloud"><span>MineColonies · Planned</span><span>Bag Of Holding</span><span>Linked Chests</span><span>Nether Chested</span><span>Echo Chest</span><span>Hopper Gadgetry</span><span>FarmTweaks</span><span>Toss To Feed</span><span>Simple Quarries</span><span>Trading Post</span><span>Trade Cycling</span><span>Enchanting Infuser</span><span>Easy Magic</span><span>Easy Anvils</span><span>Universal Enchants</span><span>Magnum Torch</span></div>
 
 <div class="ever-callout"><strong>Known-good beats merely newer.</strong><p>Changes should solve a problem, add something worthwhile, or support a deliberate Minecraft upgrade. When a compatibility problem is solved, record the working combination so the same dragon does not need to be slain twice.</p></div>
