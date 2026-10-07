@@ -7,21 +7,21 @@ title: Everhome
   <div class="ever-kicker">Minecraft Forever World</div>
   <h1>Everhome</h1>
   <div class="ever-lede">A living record of one world: the places discovered, things built, problems solved, and stories accumulated along the way.</div>
-  <div class="ever-chapter">Current Chapter · Into the Nether</div>
+  <div class="ever-chapter">Current Chapter · Establishing Everhome</div>
 </div>
 
 <div class="ever-status">
-  <div class="ever-stat"><small>Home</small><strong>Starter Base</strong></div>
-  <div class="ever-stat"><small>Progression</small><strong>Enchanted Diamond</strong></div>
-  <div class="ever-stat"><small>Frontier</small><strong>The Nether</strong></div>
+  <div class="ever-stat"><small>Home</small><strong>Everhome</strong></div>
+  <div class="ever-stat"><small>Current Work</small><strong>Settlement & Nether</strong></div>
+  <div class="ever-stat"><small>Frontier</small><strong>Everhome Nether</strong></div>
 </div>
 
 ## Right Now
 
 <div class="ever-callout">
-<strong>Find a safe route out of the isolated Nether portal cavern.</strong>
+<strong>Prepare Everhome's first Nether expedition.</strong>
 
-The first portal is active and protected by a cobbled deepslate bunker, but it opens into a huge Crimson Forest cavern above a lava sea with no natural walkable exit. The next expedition begins by reaching explorable terrain safely.
+The permanent settlement platform is established and two adjacent Overworld portals are built near the residence. Neither has been entered yet. The first expedition will establish the actual Nether-side portal, secure the arrival point, and attempt to reach a nearby fortress for Blaze Rods needed to craft Everhome's first Diamond Magnum Torch.
 </div>
 
 ## Explore Everhome
@@ -38,6 +38,6 @@ The first portal is active and protected by a cobbled deepslate bunker, but it o
 
 ## Latest Milestone
 
-Everhome's first Nether foothold is established. The portal is secured and waypointed, turning the Nether from a future destination into the world's newest frontier.
+The broad settlement platform around Everhome is now established and terraced into the surrounding terrain. The residence anchors the southeastern side of a large development area, leaving substantial room to the north and west for the settlement to grow.
 
-The current base remains a **starter base**, not Everhome's permanent home. When that place is finally found, it gets to earn the name.
+Everhome's first dedicated Nether expedition is now planned rather than blind: the portals are ready, the expected arrival area has been mapped in advance, and the first objective is Blaze Rods for spawn-control infrastructure.
