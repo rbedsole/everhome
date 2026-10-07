@@ -9,7 +9,11 @@ permalink: /resources/
   <p>Where important materials come from, what is renewable, and the infrastructure being built to support Everhome.</p>
 </div>
 
-<div class="resource-summary"><span class="status-dot"></span><div><small>Current Resource Picture</small><strong>Permanent infrastructure beginning</strong><p>The permanent main house is started. The next major infrastructure project is the already-selected mountain storage build with automatic sorting.</p></div></div>
+<div class="resource-summary"><span class="status-dot"></span><div><small>Current Resource Picture</small><strong>Permanent infrastructure beginning</strong><p>The settlement platform is established. The immediate resource bottleneck is Blaze Powder for a Fire Charge, which completes the recipe for Everhome's first Diamond Magnum Torch. Mountain storage remains the next major construction project.</p></div></div>
+
+## Immediate Bottleneck
+
+<div class="ever-callout"><strong>Blaze Rod → Blaze Powder → Fire Charge → Diamond Magnum Torch.</strong><p>The large grass development area produces substantial hostile spawning at night. The first Diamond Magnum Torch will provide broad monster-spawn suppression around the developed settlement zone. Everhome currently has five diamonds; the torch recipe consumes four, so the missing Nether-derived ingredient is the reason for the first fortress expedition.</p></div>
 
 ## Storage & Logistics
 
@@ -21,15 +25,15 @@ permalink: /resources/
   <article class="resource-card"><span class="resource-type">Mobile</span><h3>Gold Bag of Holding</h3><p>The current gold bag serves as mobile cargo for mining, exploration, construction, and material hauling rather than permanent storage.</p></article>
 </div>
 
-## Farms & Production
+## Farms, Settlement & Production
 
-<div class="ever-callout"><strong>Useful first, automated second.</strong><p>Everhome's surrounding buildings will be farms and production facilities added when they solve a real need. FarmTweaks can support dispenser planting and easier crop handling, while Toss To Feed can support more natural-looking automated livestock breeding.</p></div>
+<div class="ever-callout"><strong>Useful first, automated second.</strong><p>Everhome's surrounding buildings should solve real needs while still looking like parts of a settlement. FarmTweaks remains available, but its dispenser planting is limited to the block directly in front of each dispenser, making it less suitable for broad natural-looking automated fields than first expected. MineColonies is now under consideration as a more integrated settlement, production, and logistics system.</p></div>
 
 <div class="resource-grid">
-  <article class="resource-card"><span class="resource-type">Planned</span><h3>Crop Farmstead</h3><p>A future crop building can remain visually agricultural while hiding useful automation.</p></article>
-  <article class="resource-card"><span class="resource-type">Planned</span><h3>Barn & Pasture</h3><p>Toss To Feed makes a proper livestock area practical without reducing animals to a cramped breeding machine.</p></article>
+  <article class="resource-card"><span class="resource-type">Considering</span><h3>MineColonies Settlement</h3><p>If adopted, citizens and functional colony buildings would provide an inhabited production network around Everhome while the player's residence remains separate. The colony Warehouse and Couriers would form the colony economy rather than replacing the mountain master-storage system.</p></article>
+  <article class="resource-card"><span class="resource-type">Planned</span><h3>Barn & Pasture</h3><p>Livestock production should remain visually part of the settlement rather than becoming a cramped machine. Toss To Feed remains useful where it supports that goal.</p></article>
   <article class="resource-card"><span class="resource-type">Planned</span><h3>Lumber Operation</h3><p>Leaves Be Gone reduces cleanup overhead and makes a landscaped renewable wood operation practical.</p></article>
-  <article class="resource-card"><span class="resource-type">Future Industry</span><h3>Quarry Operation</h3><p>A permanent mining facility will handle supplies and output while Simple Quarry heads move between extraction areas as individual sites reach the bottom of the world.</p></article>
+  <article class="resource-card"><span class="resource-type">Future Industry</span><h3>Quarry Operation</h3><p>A permanent mining facility will handle supplies and output while Simple Quarry heads move between extraction areas. The facility is permanent; individual quarry sites are not.</p></article>
 </div>
 
 ## Design Principle
