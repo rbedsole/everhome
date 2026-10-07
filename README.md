@@ -4,7 +4,9 @@ A living journal and companion site chronicling the adventures, builds, discover
 
 ## Current chapter
 
-**Establishing Everhome** — The permanent home has been chosen at the foot of the mountains beside the plains. The main house is in place, and the next chapter is turning the new site into the world's permanent operational center before expanding into mountain storage, farms, villagers, industry, and transport.
+**Establishing Everhome** — The permanent home is established at the foot of the mountains beside the plains. The main residence and broad terraced settlement platform are in place, and two adjacent Nether portals stand ready for Everhome's first crossing.
+
+The immediate objective is the first dedicated Nether expedition from Everhome: confirm and secure the Nether-side portal, reach a mapped fortress target, and return with Blaze Rods for the Fire Charge needed to craft the first Diamond Magnum Torch.
 
 The former starter base is abandoned. Its old Nether portal is legacy infrastructure and is not part of Everhome's future transport network.
 
