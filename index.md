@@ -38,4 +38,4 @@ The permanent base has organized upstairs storage and centralized workstations. 
 
 ## Latest Milestone
 
-The underground iron golem farm is built and running, producing both iron and poppies. The first Nether fortress expedition and Blaze Rod objective are complete. See the [current State of the World]({{ '/docs/state-of-the-world' | relative_url }}) for verified status.\n
+The underground iron golem farm is built and running, producing both iron and poppies. The first Nether fortress expedition and Blaze Rod objective are complete. See the [current State of the World](https://github.com/rbedsole/everhome/blob/main/docs/state-of-the-world.md) for verified status.\n
