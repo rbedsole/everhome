@@ -6,9 +6,9 @@ permalink: /modlist/
 
 # Everhome Modlist
 
-**Snapshot:** 2026-10-13 · **Minecraft:** Java 26.2 · **Loader:** Fabric
+**Updated:** 2026-10-13 · **Minecraft:** Java 26.2 · **Loader:** Fabric
 
-This is the **97-entry modlist exported from Everhome**, preserving the exact displayed mod names and version strings. It is an inventory, not a verified client/server placement list or compatibility certification. The original export includes URLs for 96 entries; IPN Controlify Bridge has no URL. Click a mod name to open the source page supplied in the export. Entries without a source URL remain plain text.
+This is the **95-mod current installed list**, preserving the exact displayed mod names and version strings. It is an inventory, not a verified client/server placement list or compatibility certification. The original 97-entry export included URLs for 96 entries; the current 95-mod list has source URLs for 94 entries; IPN Controlify Bridge has no URL. Click a mod name to open the source page supplied in the export. Entries without a source URL remain plain text.
 
 | Mod (source link where available) | Exported version |
 |---|---|
@@ -17,7 +17,6 @@ This is the **97-entry modlist exported from Everhome**, preserving the exact di
 | [Arcane Lanterns](https://modrinth.com/mod/NvlReHlC) | `26.2.1` |
 | [Architectury](https://www.curseforge.com/projects/419699) | `21.1.12` |
 | [Armor Quick Swap](https://modrinth.com/mod/YxCEfYbF) | `26.2.0` |
-| [Bag Of Holding](https://modrinth.com/mod/qbqWvc0D) | `26.2.3` |
 | [Bartering Station](https://modrinth.com/mod/EOig9U0j) | `26.2.0` |
 | [Better Advancements](https://modrinth.com/mod/Q2OqKxDG) | `0.6.0.77` |
 | [Better Statistics Screen](https://modrinth.com/mod/n6PXGAoM) | `5.5.6+neoforge-26.2` |
@@ -83,7 +82,6 @@ This is the **97-entry modlist exported from Everhome**, preserving the exact di
 | [Seamless Crafting](https://modrinth.com/mod/irEfSOdD) | `2.1.0+mc26.2` |
 | [Seamless Deconstructing Workbench](https://modrinth.com/mod/7TAiBHqv) | `2.1.0+mc26.2` |
 | [Shulker Box Tooltip](https://modrinth.com/mod/2M01OLQq) | `5.4.1+26.2` |
-| [Simple Quarries](https://modrinth.com/mod/OJzqnvNf) | `0.2.11` |
 | [SlashFly](https://modrinth.com/mod/llItAGxQ) | `1.3.2` |
 | [Sodium](https://modrinth.com/mod/AANobbMI) | `0.9.1+mc26.2` |
 | [Stonecutting Upgrade](https://modrinth.com/mod/ZCLuNtSF) | `26.2.0` |
@@ -114,6 +112,6 @@ This is the **97-entry modlist exported from Everhome**, preserving the exact di
 
 - **Check loader labels:** Better Statistics Screen and TCDCommons API both have `neoforge-26.2` in their exported versions, despite the established Fabric setup. This is a flag to investigate, not evidence of a crash or proof that they are incompatible.
 - **Create Fly** appears in the export. This establishes its presence in the exported mod list, not that any Create machinery has been built in the survival world.
-- **Simple Quarries** remains in the export; a past discussion about retiring it was not confirmation of removal.
+- **Removed on 2026-10-13:** Bag Of Holding and Simple Quarries, confirmed uninstalled by the player. The original 97-mod export is historical; this page tracks the current 95-mod installation.
 - **Iris 1.11.2**, **Sodium 0.9.1**, and **Voxy 0.2.19-beta** remain the pinned rendering combination.
 - The export does not specify which entries belong on client, server, or both. Do not infer installation side from this list alone.
