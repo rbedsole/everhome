@@ -13,7 +13,7 @@ The former starter base and portal are historical locations, not current infrast
 ## Explore
 
 - [State of the World](docs/state-of-the-world.md) — authoritative, current status and decisions
-- [Modlist](technical/modlist.md) — 97 mods and exact exported versions (2026-10-13)
+- [Modlist](technical/modlist.md) — 95 installed mods and exact exported versions (2026-10-13)
 - [Journal](journal/)
 - [Progression](world/progression.md)
 - [Locations](world/locations.md)
