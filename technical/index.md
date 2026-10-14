@@ -46,10 +46,19 @@ permalink: /technical/
 
 ## Settlement Direction
 
-<div class="ever-callout"><strong>MineColonies is the planned settlement framework.</strong><p>The current intention is to use the unofficial Fabric MineColonies port for Everhome's inhabited settlement, unless a demonstrably better compatible alternative is found before installation. MineColonies would provide citizens, functional buildings, production chains, and Warehouse/Courier logistics. The player's residence and mountain master-storage system remain separate from the colony economy.</p></div>
+<div class="ever-callout"><strong>MineColonies is the planned settlement framework.</strong><p>The current intention is to use the unofficial Fabric MineColonies port for Everhome's inhabited settlement, while settlement layout planning is completed. MineColonies would provide citizens, functional buildings, production chains, and Warehouse/Courier logistics. The player's residence and mountain master-storage system remain separate from the colony economy.</p></div>
 
 ## Infrastructure Mods to Remember
 
-<div class="tag-cloud"><span>MineColonies · Planned</span><span>Bag Of Holding</span><span>Linked Chests</span><span>Nether Chested</span><span>Echo Chest</span><span>Hopper Gadgetry</span><span>FarmTweaks</span><span>Toss To Feed</span><span>Simple Quarries</span><span>Trading Post</span><span>Trade Cycling</span><span>Enchanting Infuser</span><span>Easy Magic</span><span>Easy Anvils</span><span>Universal Enchants</span><span>Magnum Torch</span></div>
+<div class="tag-cloud"><span>MineColonies · Installed; colony unbuilt</span><span>Bag Of Holding</span><span>Linked Chests</span><span>Nether Chested</span><span>Echo Chest</span><span>Hopper Gadgetry</span><span>FarmTweaks</span><span>Toss To Feed</span><span>Simple Quarries</span><span>Trading Post</span><span>Trade Cycling</span><span>Enchanting Infuser</span><span>Easy Magic</span><span>Easy Anvils</span><span>Universal Enchants</span><span>Magnum Torch</span></div>
 
 <div class="ever-callout"><strong>Known-good beats merely newer.</strong><p>Changes should solve a problem, add something worthwhile, or support a deliberate Minecraft upgrade. When a compatibility problem is solved, record the working combination so the same dragon does not need to be slain twice.</p></div>
+
+
+## Current Mod Inventory
+
+The [97-entry Everhome modlist]({{ '/modlist/' | relative_url }}) was exported on 2026-10-13 and records exact mod names and version strings. It includes MineColonies Fabric (unofficial), Create Fly, Instrumentum, Tunnel & Trench, Vein Mine, and Simple Quarries. Installation does not mean corresponding gameplay projects have been built.
+
+**Compatibility review pending:** Better Statistics Screen and TCDCommons API are exported with `neoforge-26.2` version strings, despite Everhome's Fabric setup. Verify the actual JARs/loader before making changes.
+
+**Gameplay note:** Vein Mine was identified as the source of unexpected 3×3 hand mining.
