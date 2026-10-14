@@ -1,47 +1,45 @@
 # Everhome State of the World
 
-Updated: 2026-10-08
+Updated: 2026-10-13
 
-## Current status
-Permanent mountain-and-plains base established near Overworld X 14171, Z -9943. Residence and terraced settlement platform built. Base is spawn-proofed with lighting. The MineColonies settlement layout remains undecided and will be planned in MC Base Planner before construction.
+## Current verified status
 
-## Recent completed progression
-- Nether fortress reached; Blaze Rod expedition completed and the first Diamond Magnum Torch crafted. The torch is stored at the permanent base, reserved for future settlement expansion rather than the already-lit residence.
-- Blaze spawner discovered and marked with an in-game waypoint. Staircase access was barricaded; the spawner itself was not disabled or converted into a farm. A Blaze farm is a possible future project.
-- Nether wart farms already exist at the Overworld base. Do not treat Nether wart acquisition or farming as unfinished.
+Everhome is a Minecraft Java 26.2 Fabric forever world. Permanent mountain-and-plains base established near Overworld X 14171, Z -9943. The residence and terraced settlement platform are built. The residence is **not planned for renovation**; major workstations have already been centralized.
 
-## Active experiment: Simple Quarries
-- First Simple Quarries quarry placed on top of a nearby mountain, away from the residence. Reaching it requires climbing.
-- Fueled with coal and equipped with one iron pickaxe. Player left Minecraft running while away at work. Output and whether it continued operating are not yet verified.
-- Observed 8 mined blocks per coal. The installed Simple Quarries version is 0.2.11 for Minecraft 26.2.
-- Quarry is **supplemental mining**, not Everhome's envisioned primary mining infrastructure. Its vertical 5×5 shaft will eventually reach the bottom and require relocation. Avoid designing permanent infrastructure around an exhausted shaft.
-- Next gameplay check: inspect output, pickaxe condition, fuel, storage and operating state. Portable hopper-based tool/fuel feeding and item extraction are possible follow-up improvements, not confirmed built.
+### Completed infrastructure
+- **Upstairs storage:** organized and sorted. 30 double chests across ten three-chest columns; 24 assigned to categories and six reserved for future use. Four additional downstairs enchanting-area chests are separate.
+- **Enchanting/workstations:** Enchanting Infuser installed, major workbenches centralized. Do not suggest building a new centralized workshop.
+- **Underground iron golem farm:** built and running in Everhome, with access through the recessed alcove under the base. Produces iron ingots **and poppies**. Initial Everhome measurement: **585 iron ingots in approximately 30 minutes** (roughly 1,170 ingots/hour, estimated). Earlier Testing World prototype: 646 ingots in ~45 minutes (~861/hour). Farm construction and first performance check are complete; longer-term throughput and storage capacity remain unverified.
+- **Nether expedition:** fortress reached, Blaze Rod expedition completed; first Diamond Magnum Torch crafted and stored at base. Nether wart farms already exist at the Overworld base.
+- **Nether portal:** protected Nether-side portal shelter approximately X 1757 Y 78 Z -1231.
 
-## Planned permanent mining complex (design agreed, not built)
-The player's long-term vision is a **massive, horizontally extending underground main excavation with a stepped cross-section**, not a conventional open pit or a set of isolated stacked tunnels.
+### Current decisions
+- **MineColonies:** installed in the exported modlist, but colony construction **has not begun**. Finish settlement layout in MC Base Planner before placing colony buildings. A level-5 Medieval Dark Oak Alternate Town Hall footprint of roughly 15×22 was being considered north of the base and east of the north-south road; no final placement confirmed.
+- **Nether transportation:** no other current destinations worth linking. Do not recommend building a transport network merely for its own sake.
+- **Trading hall:** discussed but no site or construction decision made. It could be separate from MineColonies or incorporated later; undecided.
+- **Next project:** not selected. Standalone renewable-resource farms and other gameplay systems are options, not commitments.
 
-- Both walls have successive terraces, each **3 blocks wide and 3 blocks high**, stepping inward as the excavation descends.
-- Terraces act as working mining galleries, with branch mines extending from the sides.
-- A permanent minecart freight railway will carry mined resources out toward the planned mountain storage and sorting system.
-- Desired excavation automation is **TNT-free**. Simple Quarries only dig downward, so they are not the primary machine for shaping this mine.
-- **Create Fly** (an unofficial Create port for Minecraft 26.2 Fabric) is a candidate for testing horizontal mechanical-drill tunnel boring. Compatibility and behavior in Everhome's full mod setup still need testing before installation in the forever world.
-- Preferred concept: a **forward-advancing tunnel boring machine** working at the active excavation face, with a separate minecart system returning resources. No requirement for the entire machine to return to its starting position. Automatically extending the freight connection is an unresolved engineering problem.
-- The player wants existing tutorials and a manageable prototype, not to invent complex machinery from scratch. Research/tutorial selection, prototype, final dimensions, mining levels, and construction are **future planning**, not completed work.
-- The mine should be developed in useful sections, with cave intersections handled through bridging or incorporation where practical. Exact location and final scale are undecided.
+### Mining and automation
+- Simple Quarries remains present in the **2026-10-13 mod export**; earlier discussion considered retiring the quarry system. Do not treat the old quarry check as an active task or infer it was removed.
+- Vein Mine caused unexpected 3×3 hand mining; the cause was identified. Instrumentum and Tunnel & Trench are also installed per the export.
+- Create Fly appears in the export, but no working Create mining machine or production line is confirmed. Future mining automation should avoid TNT.
+- The earlier large stepped underground mine and freight railway concept is historical planning, not an active build.
 
-## Nether access and mapped locations
-Current Nether portal shelter at approximately X 1757 Y 78 Z -1231, built from cobbled deepslate. Previously mapped primary fortress X 1931 Z -1365, backup X 2011 Z -1109; do not assume which fortress was visited without confirmation.
+### Modded setup
+- Minecraft Java 26.2, Fabric Loader 0.19.5, Fabric API 0.161.0+26.2, Prism Launcher.
+- Pinned rendering versions: Iris 1.11.2+mc26.2, Sodium 0.9.1+mc26.2, Voxy 0.2.19-beta. Keep the known-good versions unless deliberately testing replacements.
+- [Current 97-entry modlist]({{ '/modlist/' | relative_url }}) (2026-10-13 export). This is an installed/exported list, not proof of individual client/server placement.
+- Separate 26.3 upgrade testing is not a confirmed production-world upgrade.
 
-## Deferred or future plans
-- Finish MineColonies settlement planning in MC Base Planner before placing colony buildings.
-- Mountain storage and sorting facility; future minecart freight integration.
-- Blaze farm at the waypointed spawner.
-- Diamond Magnum Torch placement when settlement expands; stated coverage 64 blocks horizontally and 32 vertically.
-- Enchanting Infuser considered, not an active objective. All diamond equipment already has enchantments.
-- Nether transport improvements and additional Create-based automation, subject to mod compatibility and testing.
+### Nether landmarks and deferred opportunities
+- Blaze spawner discovered and waypointed; staircase access barricaded. A Blaze farm is an optional future project, not built.
+- Mapped fortress targets include X 1931 Z -1365 and X 2011 Z -1109. The visited fortress identity is not established here.
+- First Diamond Magnum Torch is reserved for future settlement expansion; don't assume it has been placed.
 
-## Abandoned
-Starter base X -890 Y 65 Z -474 and old Nether portal X -119 Y 59 Z -72 are historical only. Relocation search is complete.
+### Abandoned or superseded
+- Starter base X -890 Y 65 Z -474 and old Nether portal X -119 Y 59 Z -72 are historical only.
+- First Nether expedition and Blaze Rod acquisition are completed, not pending.
+- The earlier plan for a new mountain storage and sorting complex is **not a current construction objective**; the current upstairs storage is completed. Do not revive superseded storage plans without asking.
 
-## Project status and continuity
-These are gameplay objectives and design concepts, **not automatically World Operations projects**. The `world/projects.md` page remains governed by the World Operations mod. Recent verified player updates supersede older records. Keep completed, active, deferred, and merely considered work distinct.
+## Recordkeeping rules
+Recent player-confirmed status overrides older journal entries and proposals. Distinguish completed, in progress, deferred, and speculative ideas. The [World Operations projects page]({{ '/projects/' | relative_url }}) is reserved for projects created in that mod; gameplay goals and completed builds do not automatically become World Operations projects.
