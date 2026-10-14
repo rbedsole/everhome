@@ -268,3 +268,18 @@ code {
   .timeline-entry { grid-template-columns:64px 1fr; }
   .wo-banner { align-items:flex-start; flex-direction:column; }
 }
+
+
+/* Modlist: white links for legibility against the dark green table rows. */
+body .page-content table a,
+body .page-content table a:visited {
+  color: #ffffff;
+  font-weight: 600;
+}
+body .page-content table a:hover,
+body .page-content table a:focus-visible {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: var(--ever-gold);
+  text-underline-offset: 3px;
+}
