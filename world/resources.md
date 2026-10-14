@@ -9,11 +9,11 @@ permalink: /resources/
   <p>Where important materials come from, what is renewable, and the infrastructure being built to support Everhome.</p>
 </div>
 
-<div class="resource-summary"><span class="status-dot"></span><div><small>Current Resource Picture</small><strong>Permanent infrastructure beginning</strong><p>The settlement platform is established. The immediate resource bottleneck is Blaze Powder for a Fire Charge, which completes the recipe for Everhome's first Diamond Magnum Torch. Mountain storage remains the next major construction project.</p></div></div>
+<div class="resource-summary"><span class="status-dot"></span><div><small>Current Resource Picture</small><strong>Renewable iron established</strong><p>The underground iron farm is built and running, with an initial observation of 585 ingots in about 30 minutes. Upstairs storage is organized. No immediate resource bottleneck has been selected as the next objective.</p></div></div>
 
-## Immediate Bottleneck
+## Former Bottleneck (Resolved)
 
-<div class="ever-callout"><strong>Blaze Rod → Blaze Powder → Fire Charge → Diamond Magnum Torch.</strong><p>The large grass development area produces substantial hostile spawning at night. The first Diamond Magnum Torch will provide broad monster-spawn suppression around the developed settlement zone. Everhome currently has five diamonds; the torch recipe consumes four, so the missing Nether-derived ingredient is the reason for the first fortress expedition.</p></div>
+<div class="ever-callout"><strong>Blaze Rod objective completed.</strong><p>The fortress expedition succeeded and the first Diamond Magnum Torch was crafted. It is stored at base for future settlement expansion.</p></div>
 
 ## Storage & Logistics
 
@@ -39,3 +39,12 @@ permalink: /resources/
 ## Design Principle
 
 <div class="future-panel"><span class="ever-label">Everhome Logistics</span><h3>Visible storage is architecture. Hidden storage is infrastructure.</h3><p>The chosen mountain build determines what the storage complex looks like. Sorting, bulk storage, routing, and remote access can live behind the walls and beneath the floors where they improve function without taking over the design.</p></div>
+
+
+## Completed Infrastructure (2026-10-13)
+
+- **Upstairs storage:** 24 category-assigned double chests, six reserve double chests; four downstairs enchanting chests separate.
+- **Iron golem farm:** underground beneath the base, collecting iron and poppies. Initial observed output 585 iron in ~30 minutes (~1,170/hour estimate).
+- **Workstations:** major benches already centralized; Enchanting Infuser installed.
+
+> The older planned mountain storage, quarry, and colony cards above are historical proposals, not automatic current objectives. See [State of the World]({{ '/docs/state-of-the-world' | relative_url }}).
