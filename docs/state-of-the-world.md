@@ -20,7 +20,7 @@ Everhome is a Minecraft Java 26.2 Fabric forever world. **Confirmed world seed: 
 - **Next project:** not selected. Standalone renewable-resource farms and other gameplay systems are options, not commitments.
 
 ### Mining and automation
-- Simple Quarries remains present in the **2026-10-13 mod export**; earlier discussion considered retiring the quarry system. Do not treat the old quarry check as an active task or infer it was removed.
+- **Bag Of Holding and Simple Quarries were both uninstalled on 2026-10-13**, confirmed by the player. Do not recommend using either as an installed capability. Earlier quarry operation and portable bag plans are historical.
 - Vein Mine caused unexpected 3×3 hand mining; the cause was identified. Instrumentum and Tunnel & Trench are also installed per the export.
 - Create Fly appears in the export, but no working Create mining machine or production line is confirmed. Future mining automation should avoid TNT.
 - The earlier large stepped underground mine and freight railway concept is historical planning, not an active build.
@@ -28,7 +28,7 @@ Everhome is a Minecraft Java 26.2 Fabric forever world. **Confirmed world seed: 
 ### Modded setup
 - Minecraft Java 26.2, Fabric Loader 0.19.5, Fabric API 0.161.0+26.2, Prism Launcher.
 - Pinned rendering versions: Iris 1.11.2+mc26.2, Sodium 0.9.1+mc26.2, Voxy 0.2.19-beta. Keep the known-good versions unless deliberately testing replacements.
-- [Current 97-entry modlist]({{ '/modlist/' | relative_url }}) (2026-10-13 export). This is an installed/exported list, not proof of individual client/server placement.
+- [Current 95-mod modlist]({{ '/modlist/' | relative_url }}) (updated after two confirmed removals on 2026-10-13). This is an installed/exported list, not proof of individual client/server placement.
 - Separate 26.3 upgrade testing is not a confirmed production-world upgrade.
 
 ### Nether landmarks and deferred opportunities
