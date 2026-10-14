@@ -10,13 +10,9 @@ permalink: /progression/
   <p>Meaningful changes in Everhome and the capabilities gained along the way, without turning the world into a checklist.</p>
 </div>
 
-<div class="feature-card">
-  <span class="ever-label">Current Chapter</span>
-  <h2>Establishing Everhome</h2>
-  <p>The permanent site is chosen, the residence is in place, and the large settlement platform has been shaped and terraced into the surrounding terrain. Two adjacent Nether portals now stand near the residence. The immediate objective is Everhome's first Nether expedition: establish the actual Nether-side arrival point, reach a fortress, and bring home Blaze Rods.</p>
-</div>
+<div class="feature-card"><span class="ever-label">Current Chapter</span><h2>Establishing Reliable Infrastructure</h2><p>The permanent base is established, upstairs storage organized, workstations centralized, and the underground iron farm operational. The first Nether fortress expedition is complete. MineColonies awaits settlement layout planning.</p></div>
 
-## Major Milestones
+## Recent Completed Milestones\n\n- Underground iron golem farm operational: 585 ingots in approximately 30 minutes during initial Everhome test; poppies collected too.\n- Upstairs storage sorted: 24 assigned double chests, six reserve double chests; four downstairs enchanting chests separate.\n- Major workstations centralized, including the Enchanting Infuser.\n- Nether fortress expedition completed and first Diamond Magnum Torch crafted.\n\n## Major Milestones
 
 <div class="milestone-list">
   <div class="milestone"><span class="milestone-mark">✓</span><div><strong>Permanent Home Chosen</strong><p>The former Candidate 1 mountain-and-plains site is now simply Everhome: the permanent center of the world.</p></div></div>
@@ -29,11 +25,11 @@ permalink: /progression/
   <div class="milestone"><span class="milestone-mark">✓</span><div><strong>Deep Mining Established</strong><p>A dedicated Y -58 mining station and branch mine supported early progression.</p></div></div>
 </div>
 
-## Immediate Objective
+## Current Direction
 
-<div class="ever-callout"><strong>Blaze Rods for spawn control.</strong><p>The blank settlement platform exposed a large hostile-mob spawning problem. Everhome's first Diamond Magnum Torch requires a Fire Charge, making Blaze Powder the current bottleneck. The first Everhome Nether expedition therefore has a concrete mission: secure the portal, reach a fortress, obtain Blaze Rods, and return safely. Nether Wart is a valuable secondary prize if available.</p></div>
+No new major gameplay project has been chosen. Finish MineColonies layout before colony construction. Existing base will not be renovated. Standalone renewable-resource farms are possibilities, not commitments.
 
-## Development Roadmap
+## Historical Development Roadmap
 
 <div class="frontier-grid">
   <div class="frontier-card"><strong>1 · Settle Everhome</strong><span>Finish making the permanent home operational: complete the first Nether expedition, establish spawn suppression for the developed settlement area, and organize supplies for the next major build.</span></div>
@@ -46,3 +42,6 @@ permalink: /progression/
 </div>
 
 <div class="ever-note"><strong>Working rhythm:</strong> keep one major project and one side project active rather than treating the roadmap as a rigid checklist. Everhome should grow from actual needs and discoveries.</div>
+
+
+> **Historical note:** The roadmap above preserves older ideas, including mountain storage and Nether networks, but some are superseded or not currently useful. For current status consult the [State of the World]({{ '/docs/state-of-the-world' | relative_url }}).
