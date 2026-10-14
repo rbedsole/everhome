@@ -4,7 +4,7 @@ Updated: 2026-10-13
 
 ## Current verified status
 
-Everhome is a Minecraft Java 26.2 Fabric forever world. Permanent mountain-and-plains base established near Overworld X 14171, Z -9943. The residence and terraced settlement platform are built. The residence is **not planned for renovation**; major workstations have already been centralized.
+Everhome is a Minecraft Java 26.2 Fabric forever world. **Confirmed world seed: `888882571486312935`** (player-verified 2026-10-13; supersedes conflicting older world-record seed). Permanent mountain-and-plains base established near Overworld X 14171, Z -9943. The residence and terraced settlement platform are built. The residence is **not planned for renovation**; major workstations have already been centralized.
 
 ### Completed infrastructure
 - **Upstairs storage:** organized and sorted. 30 double chests across ten three-chest columns; 24 assigned to categories and six reserved for future use. Four additional downstairs enchanting-area chests are separate.
