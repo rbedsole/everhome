@@ -47,4 +47,4 @@ permalink: /resources/
 - **Iron golem farm:** underground beneath the base, collecting iron and poppies. Initial observed output 585 iron in ~30 minutes (~1,170/hour estimate).
 - **Workstations:** major benches already centralized; Enchanting Infuser installed.
 
-> The older planned mountain storage, quarry, and colony cards above are historical proposals, not automatic current objectives. See [State of the World]({{ '/docs/state-of-the-world' | relative_url }}).
+> The older planned mountain storage, quarry, and colony cards above are historical proposals, not automatic current objectives. See [State of the World](https://github.com/rbedsole/everhome/blob/main/docs/state-of-the-world.md).
