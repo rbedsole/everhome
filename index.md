@@ -12,16 +12,16 @@ title: Everhome
 
 <div class="ever-status">
   <div class="ever-stat"><small>Home</small><strong>Everhome</strong></div>
-  <div class="ever-stat"><small>Current Work</small><strong>Settlement & Nether</strong></div>
+  <div class="ever-stat"><small>Current Work</small><strong>Iron Farm Online</strong></div>
   <div class="ever-stat"><small>Frontier</small><strong>Everhome Nether</strong></div>
 </div>
 
 ## Right Now
 
 <div class="ever-callout">
-<strong>Prepare Everhome's first Nether expedition.</strong>
+<strong>Everhome's iron farm is operational.</strong>
 
-The permanent settlement platform is established and two adjacent Overworld portals are built near the residence. Neither has been entered yet. The first expedition will establish the actual Nether-side portal, secure the arrival point, and attempt to reach a nearby fortress for Blaze Rods needed to craft Everhome's first Diamond Magnum Torch.
+The permanent base has organized upstairs storage and centralized workstations. The underground iron golem farm collected 585 ingots in about 30 minutes on its first Everhome performance check. MineColonies settlement construction waits for layout planning; the next gameplay project has not been selected.
 </div>
 
 ## Explore Everhome
@@ -33,11 +33,9 @@ The permanent settlement platform is established and two adjacent Overworld port
   <a class="ever-card" href="{{ '/progression/' | relative_url }}"><strong>Progression</strong><span>Major milestones and the frontiers Everhome has reached.</span></a>
   <a class="ever-card" href="{{ '/resources/' | relative_url }}"><strong>Resources</strong><span>Useful materials, renewable sources, bottlenecks, and infrastructure.</span></a>
   <a class="ever-card" href="{{ '/gallery/' | relative_url }}"><strong>Gallery</strong><span>The visual history of landscapes, builds, expeditions, and discoveries.</span></a>
-  <a class="ever-card" href="{{ '/technical/' | relative_url }}"><strong>Technical</strong><span>The known-good mod stack, fixes, configuration, and troubleshooting record.</span></a>
+  <a class="ever-card" href="{{ '/modlist/' | relative_url }}"><strong>Modlist</strong><span>Current installed-mod export and version reference.</span></a>\n  <a class="ever-card" href="{{ '/technical/' | relative_url }}"><strong>Technical</strong><span>The known-good mod stack, fixes, configuration, and troubleshooting record.</span></a>
 </div>
 
 ## Latest Milestone
 
-The broad settlement platform around Everhome is now established and terraced into the surrounding terrain. The residence anchors the southeastern side of a large development area, leaving substantial room to the north and west for the settlement to grow.
-
-Everhome's first dedicated Nether expedition is now planned rather than blind: the portals are ready, the expected arrival area has been mapped in advance, and the first objective is Blaze Rods for spawn-control infrastructure.
+The underground iron golem farm is built and running, producing both iron and poppies. The first Nether fortress expedition and Blaze Rod objective are complete. See the [current State of the World]({{ '/docs/state-of-the-world' | relative_url }}) for verified status.\n
