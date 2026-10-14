@@ -33,9 +33,10 @@ The permanent base has organized upstairs storage and centralized workstations. 
   <a class="ever-card" href="{{ '/progression/' | relative_url }}"><strong>Progression</strong><span>Major milestones and the frontiers Everhome has reached.</span></a>
   <a class="ever-card" href="{{ '/resources/' | relative_url }}"><strong>Resources</strong><span>Useful materials, renewable sources, bottlenecks, and infrastructure.</span></a>
   <a class="ever-card" href="{{ '/gallery/' | relative_url }}"><strong>Gallery</strong><span>The visual history of landscapes, builds, expeditions, and discoveries.</span></a>
-  <a class="ever-card" href="{{ '/modlist/' | relative_url }}"><strong>Modlist</strong><span>Current installed-mod export and version reference.</span></a>\n  <a class="ever-card" href="{{ '/technical/' | relative_url }}"><strong>Technical</strong><span>The known-good mod stack, fixes, configuration, and troubleshooting record.</span></a>
+  <a class="ever-card" href="{{ '/modlist/' | relative_url }}"><strong>Modlist</strong><span>Current installed-mod export and version reference.</span></a>
+  <a class="ever-card" href="{{ '/technical/' | relative_url }}"><strong>Technical</strong><span>The known-good mod stack, fixes, configuration, and troubleshooting record.</span></a>
 </div>
 
 ## Latest Milestone
 
-The underground iron golem farm is built and running, producing both iron and poppies. The first Nether fortress expedition and Blaze Rod objective are complete. See the [current State of the World](https://github.com/rbedsole/everhome/blob/main/docs/state-of-the-world.md) for verified status.\n
+The underground iron golem farm is built and running, producing both iron and poppies. The first Nether fortress expedition and Blaze Rod objective are complete. See the [current State of the World](https://github.com/rbedsole/everhome/blob/main/docs/state-of-the-world.md) for verified status.
