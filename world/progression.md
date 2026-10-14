@@ -44,4 +44,4 @@ No new major gameplay project has been chosen. Finish MineColonies layout before
 <div class="ever-note"><strong>Working rhythm:</strong> keep one major project and one side project active rather than treating the roadmap as a rigid checklist. Everhome should grow from actual needs and discoveries.</div>
 
 
-> **Historical note:** The roadmap above preserves older ideas, including mountain storage and Nether networks, but some are superseded or not currently useful. For current status consult the [State of the World]({{ '/docs/state-of-the-world' | relative_url }}).
+> **Historical note:** The roadmap above preserves older ideas, including mountain storage and Nether networks, but some are superseded or not currently useful. For current status consult the [State of the World](https://github.com/rbedsole/everhome/blob/main/docs/state-of-the-world.md).
